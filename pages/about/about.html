@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../main.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../package/swiper-bundle.min.css" />
+    </head>
+    <body>
+        <div class="menu_upper">
+            <div class="menu_upper_container">
+              <div class="tel">
+                <p class="phone_number">+7 (499) 580-10-00</p>
+                <p class="phone_number">+7 (812) 455-03-00</p>
+              </div>
+              <div class="group_right">
+                <div class="notifcations">
+                  <img
+                    src="../../img/social/notifications.svg"
+                    alt=""
+                    class="img_notifcations"
+                  />
+                  <p class="p_notifcations">Уведомление</p>
+                </div>
+                <div class="authorization">
+                  <img
+                    src="../../img/social/person.svg"
+                    alt=""
+                    class="img_person"
+                    onclick="openModalAuth()"
+                  />
+                  <p class="p_person" onclick="openModalAuth()">Войти</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <header class="header_shadow">
+            <div class="header">
+              <div class="logo_div">
+                <img src="../..//img/gazprom-inform.svg" alt="" class="logo_img" />
+              </div>
+              <nav class="main_menu">
+                <ul class="ul_menu">
+                  <li><a href="../about/about.html">О компании</a></li>
+                  <li class="dropdown">
+                    <a href="#0" class="dropbtn">Портфолио</a>
+                    <ul class="dropdown-content">
+                      <li><a href="../portfolio/portfolio.html">Продукты</a></li>
+                      <li><a href="../services/services.html">Услуги</a></li>
+                      <li><a href="#0">Проекты и решения</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../news/news.html">Новости</a></li>
+                  <li><a href="">События</a></li>
+                  <li><a href="../career/career.html">Карьера</a></li>
+                  <li><a href="">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="search">
+                <div class="dropdown-srch">
+                  <img
+                    src="../../img/search.svg"
+                    alt=""
+                    class="icon_search"
+                    onclick="openSearch()"
+                  />
+                  <div class="container">
+                    <div class="dropdown-content-srch">
+                      <p>Поиск</p>
+                      <input type="text" class="input-search" placeholder="Поиск" />
+                      <p class="result-search">Результаты поиска:</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <header class="header_shadow2">
+            <div class="header2">
+              <div class="logo_div2">
+                <button class="menu-button" onclick="toggleMenu()">Меню</button>
+              </div>
+              <div id="dropdownMenu" class="dropdown-menu">
+                <ul class="ul">
+                  <li class="li">О компании</li>
+                  <li class="li">Портфолио</li>
+                  <li class="li">Новости</li>
+                  <li class="li">События</li>
+                  <li class="li">Карьера</li>
+                  <li class="li">Контакты</li>
+                </ul>
+              </div>
+            </div>
+          </header>
+          <div class="banner-content-about">
+            <div class="container">
+              <div class="banner-about">
+                <h3 class="h3-about">О НАС</h3>
+              </div>
+            </div>
+          </div>
+          <div class="breadcrumbs" style="display: block;">
+            <div class="container">
+              <ul class="breadcrumb">
+                <li><a href="../productdetails/productdetails.html">Главная</a></li>
+                <li>О нас</li>
+              </ul>
+            </div>
+          </div>
+          <section class="content-about">
+            <div class="container">
+                <h3>О НАС</h3>
+                <div class="about-btn-div">
+                    <input type="radio" name="radio" class="about-button" id="radio1" checked>
+                    <label for="radio1">Направления деятельности</label>
+                    <input type="radio" name="radio" class="about-button" id="radio2">
+                    <label for="radio2">История компании</label>
+                    <input type="radio" name="radio" class="about-button" id="radio3">
+                    <label for="radio3">Структура компании</label>
+                </div>
+                <div id="content-about-form1" class="content-about-form" style="display: block;">
+                    <h2 class="h2-about">НАПРАВЛЕНИЕ ДЕЯТЕЛЬНОСТИ</h2>
+                    <p>ООО "Газпром информ" — ваш надежный партнер в реализации цифровой трансформации и обеспечении информационной безопасности. Мы предлагаем:
+                    </p>
+                    <div class="content-about-cards">
+                        <div class="content-about-card">
+                            <div class="content-about-card-icon">
+                                <img src="../../img/about/icon/Group.svg" alt="">
+                            </div>
+                            <div class="content-about-card-text">
+                                <h2>Инновации и импортозамещение:</h2>
+                                <li>Реализация передовых ИТ-проектов, поддерживающих стратегию цифровой трансформации Группы "Газпром".
+                                </li>
+                                <li>Укрепление систем информационной безопасности, защита критически важной инфраструктуры.
+                                </li>
+                                <li>Техническое перевооружение и развитие автоматизированных систем управления для оптимизации технологических процессов.
+                                </li>
+                            </div>
+                        </div>
+                        <div class="content-about-card">
+                            <div class="content-about-card-icon">
+                                <img src="../../img/about/icon/9305 - Laptop Settings.svg" alt="">
+                            </div>
+                            <div class="content-about-card-text">
+                                <h2>Сервисные услуги:</h2>
+                                <li>Эксплуатация и модернизация инфраструктуры Центра обработки данных "Москва" и Информационно-вычислительной системы.
+                                </li>
+                                <li>Комплексное сопровождение информационно-управляющих систем, обеспечение непрерывной поддержки пользователей.</li>
+                            </div>
+                        </div>
+                        <div class="content-about-card">
+                            <div class="content-about-card-icon">
+                                <img src="../../img/about/icon/9298 - Telescope.svg" alt="">
+                            </div>
+                            <div class="content-about-card-text">
+                                <h2>Инновации и импортозамещение:</h2>
+                                <li>Создание и развитие информационно-управляющих систем на базе последних ИТ-достижений.
+                                </li>
+                                <li>Внедрение собственных ИТ-решений, способствующих прогрессу отрасли.
+                                </li>
+                                <li>Тестирование и апробация новейших отечественных инновационных продуктов, укрепление лидерства в импортозамещении.</li>
+                            </div>
+                        </div>
+                        <div class="content-about-card">
+                            <div class="content-about-card-icon">
+                                <img src="../../img/about/icon/letter.svg" alt="">
+                            </div>
+                            <div class="content-about-card-text">
+                                <h2>Услуги агента:</h2>
+                                <li>Расширение сотрудничества с ведущими отечественными вендорами.</li>
+                                <li>Оптимизация расходов на программное обеспечение, эффективное управление лицензиями и правами использования.</li>
+                            </div>
+                        </div>
+                    </div>
+                    <p>ООО "Газпром информ" — мы создаем будущее информационных технологий в энергетике, обеспечивая безопасность и эффективность на каждом шагу!</p>
+                    <div class="content-about-form-div-btn">
+                        <button type="button" class="content-about-form-btn">Связаться с нами</button>
+                    </div>
+                </div>
+                <div id="content-about-form2" class="content-about-form" style="display: none;">
+                    <h2 class="h2-about">НАПРАВЛЕНИЕ ДЕЯТЕЛЬНОСТИ</h2>
+                    <p>Важные даты в истории компании "Газпром информ", отражающие ключевые моменты в развитии компании, ее структурных изменений и вклада в автоматизацию газовой промышленности.
+                    </p>
+                    <section class="timeline-section">
+                        <div class="container-timeline">
+                          <div class="timeline">
+                            <div class="timeline-item">
+                              <div class="timeline-content">
+                                <span>1960-е годы: </span> Начало компьютеризации в газовой промышленности СССР для улучшения информационного обеспечения Единой системы газоснабжения (ЕСГ).
+                              </div>
+                            </div>                      
+                            <div class="timeline-item">
+                              <div class="timeline-content">
+                                <span>1972 год: </span>Вычислительный центр ВНИИгаз вошел в структуру ВНПО "Союзгазавтоматика".
+                              </div>
+                            </div>                      
+                            <div class="timeline-item">
+                              <div class="timeline-content">
+                                <span>1976 год: </span>Главный вычислительный центр (ГВЦ) получил статус юридического лица, начало официальной истории Общества.
+                              </div>
+                            </div>                      
+                            <div class="timeline-item">
+                              <div class="timeline-content">
+                                <span>1980 год: </span>Введение в промышленную эксплуатацию подсистем на базе ЭВМ Р-10 (ЕС-1010) для сбора и обработки информации.
+                              </div>
+                            </div>                      
+                            <div class="timeline-item">
+                              <div class="timeline-content">
+                                <span>1986 год: </span>ГВЦ стал головной организацией по сбору и обработке технологической информации в газовой промышленности.
+                              </div>
+                            </div>                      
+                            <div class="timeline-item">
+                              <div class="timeline-content">
+                                <span>1991 год: </span>ГВЦ преобразован в Фирму информатики и вычислительной техники "Информгаз".
+                              </div>
+                            </div>                      
+                            <div class="timeline-item">
+                              <div class="timeline-content">
+                                <span>1993 год: </span>Замена ЭВМ ЕС1033 на более быстродействующие ЭВМ COMPAREX.
+                              </div>
+                            </div>                      
+                            <div class="timeline-item">
+                              <div class="timeline-content">
+                                <span>1997 год: </span> Реорганизация в ООО "Фирма информатики и вычислительной техники Информгаз".
+                              </div>
+                            </div>                      
+                            <div class="timeline-item">
+                              <div class="timeline-content">
+                                <span>1998 год: </span> Создание ЗАО "Информгазинвест".
+                              </div>
+                            </div>                      
+                            <div class="timeline-item">
+                              <div class="timeline-content">
+                                <span>2008 год: </span> Утверждение Стратегии информатизации ОАО "Газпром".
+                              </div>
+                            </div>                      
+                            <div class="timeline-item">
+                              <div class="timeline-content">
+                                <span>2009 год: </span> Образование ООО "Газпром информ" путем реорганизации ЗАО "Информгазинвест"
+                              </div>
+                            </div>                      
+                            <div class="timeline-item">
+                              <div class="timeline-content">
+                                <span>2010 год: </span> Завершение процедуры присоединения "Информгаз" к "Газпром информ".
+                              </div>
+                            </div>                      
+                            <!-- Добавить другие элементы временной шкалы так же -->
+                          </div>
+                        </div>
+                      </section>
+                      <div class="swiper mySwiperAbout">
+                        <div class="swiper-wrapper swiper-wrapper-about">
+                          <div class="swiper-slide swiper-slide-about"><img src="../../img/about/photo/photo1.png" alt=""></div>
+                          <div class="swiper-slide swiper-slide-about"><img src="../../img/about/photo/photo2.png" alt=""></div>
+                          <div class="swiper-slide swiper-slide-about"><img src="../../img/about/photo/photo3.png" alt=""></div>
+                          <div class="swiper-slide swiper-slide-about"><img src="../../img/about/photo/photo4.png" alt=""></div>
+                          <div class="swiper-slide swiper-slide-about"><img src="../../img/about/photo/photo5.png" alt=""></div>
+                          <div class="swiper-slide swiper-slide-about"><img src="../../img/about/photo/photo6.png" alt=""></div>
+                          <div class="swiper-slide swiper-slide-about"><img src="../../img/about/photo/photo7.png" alt=""></div>
+                          <div class="swiper-slide swiper-slide-about"><img src="../../img/about/photo/photo1.png" alt=""></div>
+                          <div class="swiper-slide swiper-slide-about"><img src="../../img/about/photo/photo2.png" alt=""></div>
+                        </div>
+                      </div>                    
+                </div>
+                <div id="content-about-form3" class="content-about-form" style="display: none;">
+                    <h2  class="h2-about">ФИЛИАЛЫ</h2>
+                    <p>Во главе ООО "Газпром информ" стоят профессионалы высочайшего класса, чья экспертиза и стратегическое видение направляют компанию к новым горизонтам в области информационных технологий и цифровой безопасности.
+                    </p>
+                    <div class="person-cards">
+                        <div class="main-card">
+                            <div class="main-card-img">
+                                <img src="../../img/about/photo/personcards/bur.png" alt="">
+                            </div>
+                            <div class="main-card-text">
+                                <div class="">
+                                    <p class="main-card-text-p1">Алексей Анатольевич Бурушкин</p>
+                                    <p class="main-card-text-p2">Генеральный директор</p>
+                                </div>
+                                <div class="main-card-text-div">
+                                    <p class="main-card-text-p3">Родился 19 августа 1965 года в городе Волжский Волгоградской области.</p>
+                                </div>
+                                <div class="main-card-text-div">
+                                    <p class="main-card-text-p3">Окончил Военный инженерный Краснознаменный институт им. А.Ф. Можайского по специальности «Автоматизированная обработка информации».</p>
+                                    <p class="main-card-text-p3">Кандидат технических наук, доцент.</p>
+                                </div>
+                                <div class="main-card-text-div">
+                                    <p class="main-card-text-p4">1987–2010</p>
+                                    <p class="main-card-text-p3">Работал на различных должностях в Государственном научно-исследовательском испытательном институте проблем технической защиты информации ФСТЭК России (до 2001 года — 5 ЦНИИ Минобороны России), начиная с инженера до заместителя начальника института по научной работе.</p>
+                                </div>
+                                <div class="main-card-text-div">
+                                    <p class="main-card-text-p4">2011–2020</p>
+                                    <p class="main-card-text-p3">Заместитель генерального директора — начальник Службы корпоративной защиты, заместитель генерального директора по корпоративной защите ООО «Газпром информ».</p>
+                                </div>
+                                <div class="main-card-text-div">
+                                    <p class="main-card-text-p4">с июля 2020</p>
+                                    <p class="main-card-text-p3">Заместитель начальника Департамента 651 ПАО «Газпром».</p>
+                                </div>
+                                <div class="main-card-text-div">
+                                    <p class="main-card-text-p4">с августа 2020</p>
+                                    <p class="main-card-text-p3">Генеральный директор (по совместительству) ООО «Газпром информ».</p>
+                                    <p class="main-card-text-p3">Автор и соавтор более 100 научных трудов по специальной тематике, в том числе патентов на изобретения.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="small-cards">
+                            <div class="small-cards1">
+                                <div class="small-card">
+                                    <img src="../../img/about/photo/personcards/p1.png" alt="">
+                                    <p class="small-card-p1">Михаил Манюков Владимирович</p>
+                                    <p class="small-card-p2">Главный инженер — первый заместитель генерального директора</p>
+                                </div>
+                                <div class="small-card">
+                                    <img src="../../img/about/photo/personcards/p2.png" alt="">
+                                    <p class="small-card-p1">Георгий Валериевич Коломенский</p>
+                                    <p class="small-card-p2">Заместитель генерального директора по эксплуатации информационных систем</p>
+                                </div>
+                                <div class="small-card">
+                                    <img src="../../img/about/photo/personcards/p3.png" alt="">
+                                    <p class="small-card-p1">Петр Петрович Олексюк</p>
+                                    <p class="small-card-p2">Заместитель генерального директора по разработке информационных систем</p>
+                                </div>
+                                <div class="small-card">
+                                    <img src="../../img/about/photo/personcards/p4.png" alt="">
+                                    <p class="small-card-p1">Алексей Николаевич Кудрявцев</p>
+                                    <p class="small-card-p2">И.О. заместителя генерального директора по интеграции информационных систем</p>
+                                </div>
+                                <div class="small-card">
+                                    <img src="../../img/about/photo/personcards/p5.png" alt="">
+                                    <p class="small-card-p1">Игорь Сергеевич Ларионов</p>
+                                    <p class="small-card-p2">Заместитель генерального директора по реализации проектов ИТ и АСУ ТП</p>
+                                </div>
+                                <div class="small-card">
+                                    <img src="../../img/about/photo/personcards/man.png" alt="">
+                                    <p class="small-card-p1">Юрий Николаевич Гвоздев</p>
+                                    <p class="small-card-p2">Заместитель генерального директора по специальным работам</p>
+                                </div>
+                            </div>
+                            <div class="small-cards2">
+                                <div class="small-card" style="grid-area: 1 / 2 / 2 / 3;">
+                                    <img src="../../img/about/photo/personcards/man.png" alt="">
+                                    <p class="small-card-p1">Алексей Ануфриев</p>
+                                    <p class="small-card-p2">Заместитель генерального директора по корпоративной защите и управлению персоналом</p>
+                                </div>
+                                <div class="small-card" style="grid-area: 1 / 3 / 2 / 4;">
+                                    <img src="../../img/about/photo/personcards/woman.png" alt="">
+                                    <p class="small-card-p1">Юлия Велькова</p>
+                                    <p class="small-card-p2">Заместитель генерального директора по финансам и экономике</p>
+                                </div>
+                                <div class="small-card" style="grid-area: 1 / 4 / 2 / 5;">
+                                    <img src="../../img/about/photo/personcards/p9.png" alt="">
+                                    <p class="small-card-p1">Лариса Сафронова</p>
+                                    <p class="small-card-p2">Заместитель генерального директора по общим вопросам</p>
+                                </div>
+                                <div class="small-card" style="grid-area: 1 / 5 / 2 / 6;">
+                                    <img src="../../img/about/photo/personcards/p10.png" alt="">
+                                    <p class="small-card-p1">Елена Ларченкова</p>
+                                    <p class="small-card-p2">Главный бухгалтер</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <p style="margin-bottom: 36px;">Каждый член руководства приносит свой уникальный вклад в развитие ООО "Газпром информ", обеспечивая высокий уровень профессионализма и отличие нашей компании на рынке информационных технологий.</p>
+                    <h2  class="h2-about">РУКОВОДСТВО</h2>
+                    <p>Организационная структура ООО «Газпром информ» построена по территориальному принципу и состоит из администрации и девятнадцати филиалов, раскинутых по всей стране.</p>
+                    <div class="about-map-img-div">
+                        <img src="../../img/about/photo/personcards/map.png" alt="">
+                    </div>
+                    <p>Организационная структура ООО «Газпром информ» построена по территориальному принципу и состоит из администрации и девятнадцати филиалов, раскинутых по всей стране.</p>
+                </div>
+            </div>
+          </section>
+
+          <footer class="footer">
+            <div class="container">
+              <div class="footer_content1">
+                <div class="footer_columns">
+                  <div class="contact_info">
+                    <h2 class="h2_footer">Контактная информация</h2>
+                  </div>
+                  <div class="contact_div">
+                    <div class="contact_div1">
+                      <div class="address_div">
+                        <h4 class="h4_footer">Юридический адрес:</h4>
+                        <p class="p_footer">
+                          196143, г. Санкт-Петербург, вн.тер.г. муниципальный округ
+                          Звездное, пл. Победы, д. 2, литера А, помещ. 1-Н,
+                          кабинет 422
+                        </p>
+                      </div>
+                      <div class="tel_div">
+                        <h4 class="h4_footer">Телефон:</h4>
+                        <p class="p_footer">(499) 580-10-00</p>
+                        <p class="p_footer">(812) 455-03-00</p>
+                      </div>
+                    </div>
+                    <div class="contact_div2">
+                      <div class="address_corp_div">
+                        <h4 class="h4_footer">Адрес для корреспонденции:</h4>
+                        <p class="p_footer">
+                          117447, г. Москва, ул. Большая Черемушкинская, д. 13, стр. 3
+                        </p>
+                      </div>
+                      <div class="email_div">
+                        <h4 class="h4_footer">Электронная почта:</h4>
+                        <a href="" class="email">gazprominform@inform.gazprom.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer_columns2">
+                  <div class="content_footer_subscribe">
+                    <h2 class="h2_footer">
+                      Подпишитесь на рассылку, чтобы быть в курсе новостей и событий
+                    </h2>
+                    <input type="email" class="input" placeholder="Ваш E-mail" />
+                    <p class="p_consent">
+                      Нажимая на кнопку, вы соглашаетесь
+                      <a href="">на обработку персональных данных</a>
+                    </p>
+                  </div>
+                  <div class="button_subscribe_div">
+                    <button class="button_subscribe">Подписаться</button>
+                  </div>
+                </div>
+              </div>
+              <div class="footer_content2">
+                <p class="p_footer_content2">© 2024 ООО «Газпром информ»</p>
+              </div>
+            </div>
+          </footer>
+          <div id="myModalAuth" class="modalAuth">
+            <div class="container-auth">
+              <div class="modal-auth-content">
+                <div class="auth-head">Вход</div>
+                <div class="div_auth_content">
+                  <div class="div_auth_input_windows">
+                    <div class="div-input-auth-input-text">Логин</div>
+                    <input type="text" class="input-auth" />
+                  </div>
+                  <div class="div_auth_input_windows">
+                    <div class="div-input-auth-input-text">Пароль</div>
+                    <input type="password" class="input-auth" />
+                  </div>
+                </div>
+                <label for="" class="label">
+                  <input type="checkbox" name="agreement" id="agreement" />
+                  Выражаю свое согласие на обработку персональных данных в
+                  соответствии с полным текстом «Согласия» и условиями Политики
+                  обработки персональных данных
+                </label>
+                <div class="div-auth-btn">
+                  <button class="auth-button">Войти</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script src="../../package/swiper-bundle.min.js"></script>
+          <!-- Initialize Swiper -->
+          <script>
+            const swiperAbout = new Swiper(".mySwiperAbout", {
+              slidesPerView: 7,
+              spaceBetween: 33,
+              freeMode: true,
+            });
+          </script>
+          <script src="../productdetails.js"></script>      
+    </body>
+</html>

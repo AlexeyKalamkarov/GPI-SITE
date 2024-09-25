@@ -1,0 +1,335 @@
+.banner-content-about {
+    position: relative;
+    background: url("../../img/about/photo/banner-about.png");
+    background-size: cover;
+    height: 435px;
+  }
+  .banner-content-about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0),
+      rgba(0, 36, 58, 0.87)
+    );
+    z-index: 1; /* Чтобы градиент был над картинкой, но под текстом */
+}
+.banner-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 268px;
+    // padding-bottom: 72px;
+    position: absolute;
+    z-index: 2;
+    .h3-about {
+        color: #ffffff ;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+  }
+
+.content-about {
+    padding-top: 30px;
+    h3 {
+        color: black;
+        font-size: 1.5rem;
+        color: #354359;
+    }
+    .about-btn-div {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        margin-top: 17px;
+        input[type=radio] {
+            display:none; 
+            margin:10px;
+        }
+        input[type=radio] + label {
+            padding: 12px 20px;
+            border-radius: 4px;
+            background-color: white;
+            font-family: "HeliosCondC";
+            font-size: 1rem;
+            font-weight: 200;
+            color: #3179bc;
+            border: 1px #3179bc solid;
+            cursor: pointer;
+        }
+        input[type=radio]:checked + label { 
+            background-image: none;
+             background-color:#3179bc;
+             color: #ffffff;
+         }
+    }
+    .content-about-form {
+        margin-top: 27px;
+        position: relative;
+        .h2-about {
+            margin-bottom: 27px;
+        }
+        p {
+            font-size: 1rem;
+            color: #667085;
+            font-weight: 200;
+            // margin-top: 27px;
+        }
+        .content-about-form-div-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 27px;
+            .content-about-form-btn {
+                padding: 18px 30px;
+                border-radius: 4px;
+                background-color: #3179bc;
+                font-family: "HeliosCondC";
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: #fff;
+                border: 1px #3179bc solid;
+                cursor: pointer;            
+            }
+        }
+    .content-about-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 27px;
+    grid-row-gap: 27px;
+        .content-about-card {
+            margin-top: 27px;
+            display: flex;
+            flex-direction: row;
+
+            .content-about-card-text {
+                margin-left: 27px;
+                h2 {
+                    font-size: 1rem;
+                    color: #667085;
+                    font-weight: 700;
+                    letter-spacing: -1%;
+                }
+                li {
+                    font-size: 1rem;
+                    color: #667085;
+                    font-weight: 200;
+                    margin-top: 1em;
+                }    
+            }
+        }
+    }
+    .mySwiperAbout {
+        width: 100%;
+        height: auto;
+        margin-top: 27px;
+        .swiper-wrapper-about {
+            display: flex;
+            flex-direction: row;
+            .swiper-slide-about {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .swiper-slide-about img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                  }
+            }
+        }
+    }
+}
+
+
+
+/* Общий стиль для контейнера */
+.timeline-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+}
+  .container-timeline {
+    max-width: 646px;
+  }
+  /* Заголовок и описание */
+  .timeline-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .timeline-description {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  
+  /* Временная шкала */
+  .timeline {
+    position: relative;
+    padding: 20px 0;
+    // border-left: 2px solid #0079C2; /* Линия таймлайна */
+  
+    .timeline-item {
+      position: relative;
+      padding: 20px 0 20px 40px;
+      border-left: 2px solid #0079C2; /* Линия таймлайна */
+
+  
+      &:before {
+        content: '';
+        position: absolute;
+        top: 40%;
+        left: -9px;
+        width: 11px;
+        height: 11px;
+        background-color: #0079C2;
+        border: 3px solid #0079C2;
+        // border-left: 2px solid #0079C2; /* Линия таймлайна */
+        border-radius: 50%;
+      }
+  
+      .timeline-date {
+        font-size: 16px;
+        font-weight: 700;
+        color: #0079C2;
+        margin-bottom: 10px;
+      }
+  
+      .timeline-content {
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        color: #667085;
+        font-size: 1rem;
+        span {
+            font-size: 1rem;
+            color: #667085;
+            font-weight: 700;
+        }
+      }
+    }
+  }
+}
+.person-cards {
+    margin-top: 16px;
+    .main-card {
+        padding: 14px 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 20px;
+        .main-card-text {
+            div {
+                .main-card-text-p1 {
+                    font-size: 1.5rem;
+                    color: #667085;
+                    font-weight: 200;
+                    margin-bottom: 10px;
+                    line-height: 1;
+                }
+                .main-card-text-p2 {
+                    font-size: 1.125rem;
+                    color: #667085;
+                    font-weight: 200;
+                }
+                .main-card-text-p3 {
+                    font-size: 1rem;
+                    color: #667085;
+                    font-weight: 200;
+                }
+                .main-card-text-p4 {
+                    font-size: 1rem;
+                    color: #667085;
+                    font-weight: 700;
+                }
+            }
+        }
+        .main-card-text-div {
+            margin-top: 16px;
+        }
+    }
+    .small-cards {
+        margin-top: 16px;
+        .small-cards1 {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 50px;
+            grid-row-gap: 0px;
+            .small-card {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                .small-card-p1 {
+                    font-size: 1rem;
+                    color: #667085;
+                    font-weight: 200;
+                }
+                .small-card-p2 {
+                    font-size: 0.8rem;
+                    color: #98A2B3;
+                    font-weight: 200;
+                }
+            }
+        }
+        .small-cards2 {
+            margin-top: 26px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 26px;
+            .small-card {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                max-width: 153px;
+                .small-card-p1 {
+                    font-size: 1rem;
+                    color: #667085;
+                    font-weight: 200;
+                }
+                .small-card-p2 {
+                    font-size: 0.8rem;
+                    color: #98A2B3;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+}
+.about-map-img-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    img {
+        width: 50%;
+        height: auto;
+    }
+}
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  
+    .timeline {
+      .timeline-item {
+        padding-left: 20px;
+  
+        &:before {
+          left: -15px;
+        }
+      }
+    }
+  }

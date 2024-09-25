@@ -1,0 +1,199 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "HeliosCondC";
+  font-size: 16px;
+}
+
+.h3-portfolio {
+  font-size: 1.5rem;
+  color: #354359;
+  margin-bottom: 16px;
+}
+
+.parent-prodacts-item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.prodacts-item1 {
+  grid-area: 1/1/2/2;
+  background: url(../../img/portfolio/prodacts-item.png);
+  width: 370px;
+  height: 370px;
+  position: relative;
+}
+.prodacts-item1 .prodact-item-content h4 a {
+  position: absolute;
+  font-family: "HeliosCondC";
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 700;
+  min-width: 270px;
+}
+.prodacts-item1 .prodact-item-content .prodacts-item-text-a {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.prodacts-item2 {
+  background: url(../../img/portfolio/prodacts-item2.png);
+  width: 370px;
+  height: 370px;
+  position: relative;
+}
+.prodacts-item2 .prodact-item-content h4 {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+.prodacts-item2 .prodact-item-content .prodacts-item-text-a {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.prodacts-item3 {
+  background: url(../../img/portfolio/prodacts-item3.png);
+  width: 370px;
+  height: 370px;
+  position: relative;
+}
+.prodacts-item3 .prodact-item-content h4 {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+.prodacts-item3 .prodact-item-content .prodacts-item-text-a {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.prodacts-item4 {
+  background: url(../../img/portfolio/prodacts-item4.png);
+  width: 370px;
+  height: 370px;
+  position: relative;
+}
+.prodacts-item4 .prodact-item-content h4 {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+.prodacts-item4 .prodact-item-content .prodacts-item-text-a {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.prodacts-item5 {
+  background: url(../../img/portfolio/prodacts-item5.png);
+  width: 370px;
+  height: 370px;
+  position: relative;
+}
+.prodacts-item5 .prodact-item-content h4 {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+.prodacts-item5 .prodact-item-content .prodacts-item-text-a {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.prodacts-item6 {
+  background: url(../../img/portfolio/prodacts-item6.png);
+  width: 370px;
+  height: 370px;
+  position: relative;
+}
+.prodacts-item6 .prodact-item-content h4 {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 700;
+}
+.prodacts-item6 .prodact-item-content .prodacts-item-text-a {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.prodacts-item1::before,
+.prodacts-item2::before,
+.prodacts-item3::before,
+.prodacts-item4::before,
+.prodacts-item5::before,
+.prodacts-item6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 36, 58, 0.87)); /* Градиент */
+  z-index: 1; /* Чтобы градиент был над картинкой, но под текстом */
+  cursor: pointer;
+}
+
+.prodacts-item1:hover:before,
+.prodacts-item2:hover:before,
+.prodacts-item3:hover:before,
+.prodacts-item4:hover:before,
+.prodacts-item5:hover:before,
+.prodacts-item6:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Градиент */
+  z-index: 1; /* Чтобы градиент был над картинкой, но под текстом */
+  cursor: pointer;
+}
+
+.prodact-item-content {
+  position: absolute;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 240px;
+  margin-bottom: auto;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1024px) {
+  .parent-prodacts-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .parent-prodacts-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=portfolio.css.map */

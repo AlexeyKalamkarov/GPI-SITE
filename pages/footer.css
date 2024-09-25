@@ -1,0 +1,102 @@
+/* footer */
+.footer {
+    background: #333333;
+    color: #fff;
+    margin-top: 60px;
+  }
+  .contact_div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .contact_div1,
+  .contact_div2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .address_div,
+  .address_corp_div {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .tel_div,
+  .email_div {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .footer_content1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .h2_footer {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .h4_footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .footer .container {
+    padding: 30px;
+  }
+  .p_consent {
+    font-size: 0.75rem;
+    white-space: nowrap;
+    margin-top: 10px;
+  }
+  .input {
+    width: 380px;
+    height: 50px;
+    padding-bottom: 8px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #444;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #fff;
+    text-indent: 19px;
+  }
+  
+  .button_subscribe_div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .button_subscribe {
+    width: 142px;
+    height: 34px;
+    margin-top: 16px;
+    font-family: "HeliosCondC";
+    font-size: 1rem;
+    font-weight: 200;
+    background-color: white;
+    color: #3179bc;
+    border: 1px #3179bc solid;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .email_div a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .p_consent a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .footer_content2 {
+    display: flex;
+    justify-content: center;
+    font-family: "HeliosCond";
+    font-size: 1.125rem;
+    font-weight: 200;
+    color: #fff;
+    padding-top: 10px;
+    margin-top: 36px;
+    border-top: 1px #464646 solid;
+    white-space: nowrap;
+  }
+  

@@ -1,0 +1,142 @@
+.banner-content {
+    position: relative;
+    // background: url("../img/services/banner-container.png");
+    background: url("../../img/services/banner-container.png");
+    background-size: cover;
+    height: 435px;
+  }
+  .banner-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0),
+      rgba(0, 36, 58, 0.87)
+    );
+    z-index: 1; /* Чтобы градиент был над картинкой, но под текстом */
+}
+
+  h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+  }
+  .button {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 24px;
+  }
+  .banner-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 104px;
+    padding-bottom: 72px;
+    position: absolute;
+    z-index: 2;
+    .h3-services {
+        color: #ffffff ;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+  }
+  .button-services {
+    width: 202px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: white;
+    font-family: "HeliosCondC";
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #3179bc;
+    border: 1px #3179bc solid;
+    cursor: pointer;
+  }
+  
+//   Блок наши услуги
+.content-services-text {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+.service-goals-text {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    h3 {
+        color: black;
+        font-size: 1.5rem;
+        color: #354359;
+    }
+    .about-service {
+        p {
+            font-size: 1rem;
+            font-weight: 100;
+            color: #667085;       
+        }
+        h3 {
+            margin-bottom: 20px;
+        }
+        .p-about-services {
+            margin-top: 1em;
+          }
+          .goals {
+            margin-top: 47;
+            .goal {
+                margin-top: 27px;
+                p {
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+  }
+.sevice-card-div {
+    display: flex;
+    justify-content: center;
+    .sevice-card-content {
+        max-width: 599px;
+        height: auto;
+        padding: 24px;
+        box-shadow: 0px 6.25px 6.25px 0px rgba(34, 60, 80, 0.2);
+        border-radius: 8px;
+        margin-top: 27px;
+        .sevice-card-content1 {
+            h1{
+                font-size: 1.25rem;
+                color: #039855;
+                font-weight: 700;
+            }
+            p {
+                font-size: 1rem;
+                color: #667085;
+                font-weight: 200;
+                letter-spacing: -1%;
+                margin-top: 1em;
+            }
+        }
+        .sevice-card-content2 {
+            display: flex;
+            justify-content: center;
+            margin-top: 11px;            
+            .sevice-card-button {
+                width: 202px;
+                height: 50px;
+                border-radius: 4px;
+                background-color: #3179BC;
+                font-family: "HeliosCondC";
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: #ffffff;
+                border: 1px #3179bc solid;
+                cursor: pointer;
+              }
+            
+        }
+    }
+}

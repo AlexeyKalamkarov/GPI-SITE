@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu_upper">
+            <div class="menu_upper_container">
+              <div class="tel">
+                <p class="phone_number">+7 (499) 580-10-00</p>
+                <p class="phone_number">+7 (812) 455-03-00</p>
+              </div>
+              <div class="group_right">
+                <div class="notifcations">
+                  <img
+                    src="../../img/social/notifications.svg"
+                    alt=""
+                    class="img_notifcations"
+                  />
+                  <p class="p_notifcations">Уведомление</p>
+                </div>
+                <div class="authorization">
+                  <img
+                    src="../../img/social/person.svg"
+                    alt=""
+                    class="img_person"
+                    onclick="openModalAuth()"
+                  />
+                  <p class="p_person" onclick="openModalAuth()">Войти</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <header class="header_shadow">
+            <div class="header">
+              <div class="logo_div">
+                <img src="../../img/gazprom-inform.svg" alt="" class="logo_img" />
+              </div>
+              <nav class="main_menu">
+                <ul class="ul_menu">
+                  <li><a href="../about/about.html">О компании</a></li>
+                  <li class="dropdown">
+                    <a href="#0" class="dropbtn">Портфолио</a>
+                    <ul class="dropdown-content">
+                      <li><a href="../portfolio/portfolio.html">Продукты</a></li>
+                      <li><a href="../services/services.html">Услуги</a></li>
+                      <li><a href="#0">Проекты и решения</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../news/news.html">Новости</a></li>
+                  <li><a href="">События</a></li>
+                  <li><a href="../career/career.html">Карьера</a></li>
+                  <li><a href="">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="search">
+                <div class="dropdown-srch">
+                  <img
+                    src="../../img/search.svg"
+                    alt=""
+                    class="icon_search"
+                    onclick="openSearch()"
+                  />
+                  <div class="container">
+                    <div class="dropdown-content-srch">
+                      <p>Поиск</p>
+                      <input type="text" class="input-search" placeholder="Поиск" />
+                      <p class="result-search">Результаты поиска:</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <header class="header_shadow2">
+            <div class="header2">
+              <div class="logo_div2">
+                <button class="menu-button" onclick="toggleMenu()">Меню</button>
+              </div>
+              <div id="dropdownMenu" class="dropdown-menu">
+                <ul class="ul">
+                  <li class="li">О компании</li>
+                  <li class="li">Портфолио</li>
+                  <li class="li">Новости</li>
+                  <li class="li">События</li>
+                  <li class="li">Карьера</li>
+                  <li class="li">Контакты</li>
+                </ul>
+              </div>
+            </div>
+          </header>
+          <div class="banner-content-news">
+            <div class="container">
+              <div class="banner-news">
+                <h3 class="h3-news">НОВОСТИ</h3>
+              </div>
+            </div>
+          </div>
+          <div class="breadcrumbs" style="display: block;">
+            <div class="container">
+              <ul class="breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li><a href="../news/news.html">Новости</a></li>
+                <li>Ход выполнения работ по миграции ИТ-инфраструктуры ПАО «Газпром» на отечественные решения обсудили в рамках ЦИПР-2024</li>
+              </ul>
+            </div>
+          </div>
+          <section class="content-news-details">
+            <div class="container">
+                <h3>НОВОСТИ</h3>
+                <h4>Ход выполнения работ по миграции ИТ-инфраструктуры ПАО «Газпром» на отечественные решения Обсудили в рамках ЦИПР-2024</h4>
+                <p>C 21 по 24 мая в Нижнем Новгороде прошел форум «Цифровая индустрия промышленной России» (ЦИПР-2024). Мероприятие является одним из крупнейших событий в области цифровой экономики в России. Ежегодно здесь встречаются лидеры рынка, проводятся презентации лучших практик, технологий и инициатив.
+                </p>
+                <p>В этом году форум посетили более 100 представителей иностранных делегаций из 14 стран. Главной темой пленарного заседания ЦИПР-2024 стала «Цифровая индустрия промышленной России», в ходе которого выступил председатель Правительства Российской Федерации Михаил Мишустин. Всего в рамках деловой программы состоялось более 100 сессий, которые были разделены на треки, раскрывающие различные аспекты цифровизации.
+                </p>
+                <p>22 мая на ЦИПР-2024 в рамках партнерского мероприятия РЕД СОФТ «Как обеспечить успешную миграцию сложных ИТ-инфраструктур на российские решения» состоялась секция, в которой принял участие заместитель главного инженера ООО «Газпром информ» Олег Косянков.</p>
+                <div class="news-details-img">
+                    <img src="../../img/newsdetails/newsdetails-img1.png" alt="" onclick="modalWindowNewsDetails()">
+                    <p class="news-details-img-text">Работа секции с участием представителя ООО «Газпром информ» Олега Косянкова</p>
+                </div>
+                <p>В ходе секции представители корпоративного сектора и ведущих отечественных компаний-разработчиков программного обеспечения обсудили сложные вопросы, с которыми сталкивается заказчик при миграции ИТ-инфраструктуры на российские решения, рассмотрели основные факторы, влияющие на достижение успеха в миграции без потери функциональности, плюсы и минусы мультивендорных интеграций, а также уделили внимание новым вызовам, которые стоят сегодня перед всей ИТ-индустрией.
+                </p>
+                <p>Выступая перед участниками, Олег Косянков рассказал о ключевых моментах, реализованных в ходе выполнения работ по миграции ИТ-инфраструктуры ПАО «Газпром» на отечественные решения, способах организации тестирования программного обеспечения, новых вариантах взаимодействия с производителями, в том числе по обмену опытом с другими российскими корпорациями.
+                </p>
+                <p>Участники были солидарны во мнении, что именно формирование кросскорпоративных мультивендорных центров компетенций может стать абсолютно необходимым условием успешности исполнения планов по снижению зависимости от иностранных ИТ-решений.</p>
+            </div>
+          </section>
+          <footer class="footer">
+            <div class="container">
+              <div class="footer_content1">
+                <div class="footer_columns">
+                  <div class="contact_info">
+                    <h2 class="h2_footer">Контактная информация</h2>
+                  </div>
+                  <div class="contact_div">
+                    <div class="contact_div1">
+                      <div class="address_div">
+                        <h4 class="h4_footer">Юридический адрес:</h4>
+                        <p class="p_footer">
+                          196143, г. Санкт-Петербург, вн.тер.г. муниципальный округ
+                          Звездное, пл. Победы, д. 2, литера А, помещ. 1-Н,
+                          кабинет 422
+                        </p>
+                      </div>
+                      <div class="tel_div">
+                        <h4 class="h4_footer">Телефон:</h4>
+                        <p class="p_footer">(499) 580-10-00</p>
+                        <p class="p_footer">(812) 455-03-00</p>
+                      </div>
+                    </div>
+                    <div class="contact_div2">
+                      <div class="address_corp_div">
+                        <h4 class="h4_footer">Адрес для корреспонденции:</h4>
+                        <p class="p_footer">
+                          117447, г. Москва, ул. Большая Черемушкинская, д. 13, стр. 3
+                        </p>
+                      </div>
+                      <div class="email_div">
+                        <h4 class="h4_footer">Электронная почта:</h4>
+                        <a href="" class="email">gazprominform@inform.gazprom.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer_columns2">
+                  <div class="content_footer_subscribe">
+                    <h2 class="h2_footer">
+                      Подпишитесь на рассылку, чтобы быть в курсе новостей и событий
+                    </h2>
+                    <input type="email" class="input" placeholder="Ваш E-mail" />
+                    <p class="p_consent">
+                      Нажимая на кнопку, вы соглашаетесь
+                      <a href="">на обработку персональных данных</a>
+                    </p>
+                  </div>
+                  <div class="button_subscribe_div">
+                    <button class="button_subscribe">Подписаться</button>
+                  </div>
+                </div>
+              </div>
+              <div class="footer_content2">
+                <p class="p_footer_content2">© 2024 ООО «Газпром информ»</p>
+              </div>
+            </div>
+          </footer>
+          <div id="myModalAuth" class="modalAuth">
+            <div class="container-auth">
+              <div class="modal-auth-content">
+                <div class="auth-head">Вход</div>
+                <div class="div_auth_content">
+                  <div class="div_auth_input_windows">
+                    <div class="div-input-auth-input-text">Логин</div>
+                    <input type="text" class="input-auth" />
+                  </div>
+                  <div class="div_auth_input_windows">
+                    <div class="div-input-auth-input-text">Пароль</div>
+                    <input type="password" class="input-auth" />
+                  </div>
+                </div>
+                <label for="" class="label">
+                  <input type="checkbox" name="agreement" id="agreement" />
+                  Выражаю свое согласие на обработку персональных данных в
+                  соответствии с полным текстом «Согласия» и условиями Политики
+                  обработки персональных данных
+                </label>
+                <div class="div-auth-btn">
+                  <button class="auth-button">Войти</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="myModalnewsDetails" class="modalnewsDetails">
+            <div class="modal-content-newsDetails">
+              <div class="slider-container-newsDetails">
+                <div class="slider-newsDetails">
+                  <div class="arrow left-arrow-newsDetails">&#10094;</div>
+                  <div class="arrow right-arrow-newsDetails">&#10095;</div>
+                  <img src="../../img/newsdetails/newsdetails-img1.png" class="slide-newsDetails" alt="Image 1" />
+                  <img src="../../img/newsdetails/newsdetails-img2.png" class="slide-newsDetails" alt="Image 2" />
+                  <img src="../../img/newsdetails/newsdetails-img3.png" class="slide-newsDetails" alt="Image 3" />
+                </div>
+                <div class="thumbnail-container-newsDetails">
+                  <img
+                    src="../../img/newsdetails/newsdetails-img1.png"
+                    class="thumbnail-newsDetails"
+                    data-index="0"
+                    alt="Thumbnail 1"
+                  />
+                  <img
+                    src="../../img/newsdetails/newsdetails-img2.png"
+                    class="thumbnail-newsDetails"
+                    data-index="1"
+                    alt="Thumbnail 2"
+                  />
+                  <img
+                    src="../../img/newsdetails/newsdetails-img3.png"
+                    class="thumbnail-newsDetails"
+                    data-index="2"
+                    alt="Thumbnail 3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+      
+
+          <script src="../productdetails.js"></script>      
+    </body>
+</html>

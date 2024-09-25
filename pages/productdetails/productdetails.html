@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <link rel="stylesheet" href="./productdetails.css" /> -->
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../../package/swiper-bundle.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product-details</title>
+  </head>
+  <body>
+    <div class="menu_upper">
+      <div class="menu_upper_container">
+        <div class="tel">
+          <p class="phone_number">+7 (499) 580-10-00</p>
+          <p class="phone_number">+7 (812) 455-03-00</p>
+        </div>
+        <div class="group_right">
+          <div class="notifcations">
+            <img
+              src="../../img/social/notifications.svg"
+              alt=""
+              class="img_notifcations"
+            />
+            <p class="p_notifcations">Уведомление</p>
+          </div>
+          <div class="authorization">
+            <img
+              src="../../img/social/person.svg"
+              alt=""
+              class="img_person"
+              onclick="openModalAuth()"
+            />
+            <p class="p_person" onclick="openModalAuth()">Войти</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="header_shadow">
+      <div class="header">
+        <div class="logo_div">
+          <img src="../../img/gazprom-inform.svg" alt="" class="logo_img" />
+        </div>
+        <nav class="main_menu">
+          <ul class="ul_menu">
+            <li><a href="../about/about.html">О компании</a></li>
+            <li class="dropdown">
+              <a href="#0" class="dropbtn">Портфолио</a>
+              <ul class="dropdown-content">
+                <li><a href="../portfolio/portfolio.html">Продукты</a></li>
+                <li><a href="../services/services.html">Услуги</a></li>
+                <li><a href="#0">Проекты и решения</a></li>
+              </ul>
+            </li>
+            <li><a href="../news/news.html">Новости</a></li>
+            <li><a href="">События</a></li>
+            <li><a href="../career/career.html">Карьера</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="search">
+          <div class="dropdown-srch">
+            <img
+              src="../../img/search.svg"
+              alt=""
+              class="icon_search"
+              onclick="openSearch()"
+            />
+            <div class="container">
+              <div class="dropdown-content-srch">
+                <p>Поиск</p>
+                <input type="text" class="input-search" placeholder="Поиск" />
+                <p class="result-search">Результаты поиска:</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="header_shadow2">
+      <div class="header2">
+        <div class="logo_div2">
+          <button class="menu-button" onclick="toggleMenu()">Меню</button>
+        </div>
+        <div id="dropdownMenu" class="dropdown-menu">
+          <ul class="ul">
+            <li class="li">О компании</li>
+            <li class="li">Портфолио</li>
+            <li class="li">Новости</li>
+            <li class="li">События</li>
+            <li class="li">Карьера</li>
+            <li class="li">Контакты</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="swiper mySwiper11">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="main">
+            <div class="container">
+              <div class="banner">
+                <h3>
+                  УНИВЕРСАЛЬНЫЙ
+                  <p></p>
+                  ЭЛЕКТРОННЫЙ
+                  <p></p>
+                  ТЕЛЕФОННЫЙ
+                  <p></p>
+                  СПРАВОЧНИК
+                  <p></p>
+                </h3>
+                <div class="button">
+                  <button class="button_secondary" type="submit">
+                    Запросить демонстрацию
+                  </button>
+                  <button class="button_primary" type="submit">
+                    Отправить заявку
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="main">
+            <div class="container">
+              <div class="banner">
+                <h3>
+                  УНИВЕРСАЛЬНЫЙ
+                  <p></p>
+                  ЭЛЕКТРОННЫЙ
+                  <p></p>
+                  ТЕЛЕФОННЫЙ
+                  <p></p>
+                  СПРАВОЧНИК
+                  <p></p>
+                </h3>
+                <div class="button">
+                  <button class="button_secondary" type="submit">
+                    Запросить демонстрацию
+                  </button>
+                  <button class="button_primary" type="submit">
+                    Отправить заявку
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination11"></div>
+    </div>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumb">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Портфолио</a></li>
+          <li><a href="#">Продукты</a></li>
+          <li>Универсальный электронный телефонный справочник</li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="description">
+          <div class="content_right">
+            <div class="about">
+              <h3>УНИВЕРСАЛЬНЫЙ ЭЛЕКТРОННЫЙ ТЕЛЕФОННЫЙ СПРАВОЧНИК</h3>
+              <p>
+                В поисках оптимального решения для управления контактами в вашей
+                крупной компании?
+              </p>
+              <p class="p_about">
+                <b>Универсальный электронный телефонный справочник"</b> - это
+                именно то, что вам нужно! Наш продукт предлагает
+                централизованное решение для хранения и быстрого доступа к
+                корпоративным контактам, обеспечивая эффективность и
+                синхронизацию работы всех отделов.
+              </p>
+              <p class="p_about">
+                С нашим электронным справочником вы получаете не просто базу
+                данных, а мощный инструмент для коммуникации и планирования.
+                Интуитивно понятный интерфейс, высокая степень защиты данных и
+                возможность интеграции с другими корпоративными системами делают
+                его незаменимым помощником в повседневной деятельности вашей
+                компании.
+              </p>
+            </div>
+            <div class="goals">
+              <h2>Задачи, которые решает справочник:</h2>
+              <ul class="tasks">
+                <li class="task">
+                  <img src="../../img/priority.svg" class="task-icon" />
+                  <p class="task_title">Централизация данных:</p>
+                  <p class="task_description">
+                    Объединение всех корпоративных контактов в одной базе.
+                  </p>
+                </li>
+                <li class="task">
+                  <img src="../../img/priority.svg" class="task-icon" />
+                  <p class="task_title">Быстрый доступ:</p>
+                  <p class="task_description">
+                    Мгновенный поиск нужной информации благодаря продвинутым
+                    алгоритмам поиска.
+                  </p>
+                </li>
+                <li class="task">
+                  <img src="../../img/priority.svg" class="task-icon" />
+                  <p class="task_title">Интеграция:</p>
+                  <p class="task_description">
+                    Совместимость с основными корпоративными системами и
+                    платформами.
+                  </p>
+                </li>
+                <li class="task">
+                  <img src="../../img/priority.svg" class="task-icon" />
+                  <p class="task_title">Обновление информации:</p>
+                  <p class="task_description">
+                    Легкость внесения изменений и актуализации данных.
+                  </p>
+                </li>
+                <li class="task">
+                  <img src="../../img/priority.svg" class="task-icon" />
+                  <p class="task_title">Безопасность:</p>
+                  <p class="task_description">
+                    Надежная защита конфиденциальной информации.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="goals">
+              <h2>Наши преимущества</h2>
+              <ul class="tasks">
+                <li class="task">
+                  <img src="../../img/star.svg" class="task-icon" />
+                  <p class="task_title">Надежность:</p>
+                  <p class="task_description">
+                    Гарантия стабильной работы и поддержки 24/7.
+                  </p>
+                </li>
+                <li class="task">
+                  <img src="../../img//star.svg" class="task-icon" />
+                  <p class="task_title">Масштабируемость:</p>
+                  <p class="task_description">
+                    Возможность расширения функционала справочника под растущие
+                    потребности бизнеса.
+                  </p>
+                </li>
+                <li class="task">
+                  <img src="../../img/star.svg" class="task-icon" />
+                  <p class="task_title">Пользовательский опыт:</p>
+                  <p class="task_description">
+                    Простота и удобство использования.
+                  </p>
+                </li>
+                <li class="task">
+                  <img src="../../img/star.svg" class="task-icon" />
+                  <p class="task_title">Техническая поддержка:</p>
+                  <p class="task_description">
+                    Квалифицированная помощь в вопросах настройки и
+                    эксплуатации.
+                  </p>
+                </li>
+                <li class="task">
+                  <img src="../../img/star.svg" class="task-icon" />
+                  <p class="task_title">Индивидуальный подход:</p>
+                  <p class="task_description">
+                    Разработка дополнительных модулей под специфику вашего
+                    бизнеса.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="content_left">
+            <div class="shadow_div">
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div
+                style="
+                  --swiper-navigation-color: #fff;
+                  --swiper-pagination-color: #fff;
+                "
+                class="swiper mySwiper2"
+              >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slideH">
+                    <img src="../../img/swiper/1.jpg" onclick="modalWindow()" />
+                  </div>
+                  <div class="swiper-slide swiper-slideH">
+                    <img src="../../img/image11.jpg" onclick="modalWindow()" />
+                  </div>
+                  <div class="swiper-slide swiper-slideH">
+                    <img src="../../img/swiper/3.jpg" onclick="modalWindow()" />
+                  </div>
+                  <div class="swiper-slide swiper-slideH">
+                    <img src="../../img/swiper/1.jpg" onclick="modalWindow()" />
+                  </div>
+                </div>
+              </div>
+              <div thumbsSlider="" class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slideB">
+                    <img src="../../img/swiper/1.jpg" />
+                  </div>
+                  <div class="swiper-slide swiper-slideB">
+                    <img src="../../img/image11.jpg" />
+                  </div>
+                  <div class="swiper-slide swiper-slideB">
+                    <img src="../../img/swiper/3.jpg" />
+                  </div>
+                  <div class="swiper-slide swiper-slideB">
+                    <img src="../../img/swiper/1.jpg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper testimonials">
+          <div class="swiper-wrapper new-swapper-wrapper">
+            <div class="swiper-slide swiper-slideT">
+              <div class="testimonial_card">
+                <p class="p_testimonial_card">
+                  С помощью “Универсального электронного телефонного
+                  справочника” мы смогли значительно ускорить внутренние
+                  процессы. Незаменимый инструмент для нашего бизнеса!
+                </p>
+                <div class="customer">
+                  <div class="details">
+                    <div class="customer_img">
+                      <img
+                        src="../../img/Testimonial/RTC.svg"
+                        alt=""
+                        class="logo_card"
+                      />
+                    </div>
+                    <div class="description_testimonials">
+                      <div class="name">ООО "Ростелеком"</div>
+                      <div class="description_name">
+                        Российский провайдер цифровых услуг и сервисов
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon_card_div">
+                    <img
+                      src="../../img/Testimonial/IconCard.svg"
+                      alt=""
+                      class="icon_card"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slideT">
+              <div class="testimonial_card">
+                <p class="p_testimonial_card">
+                  Этот справочник стал настоящим спасением для нашей
+                  многоуровневой структуры управления. Рекомендуем!
+                </p>
+                <div class="customer">
+                  <div class="details">
+                    <div class="customer_img">
+                      <img
+                        src="../../img/Testimonial/GAZ.svg"
+                        alt=""
+                        class="logo_card"
+                      />
+                    </div>
+                    <div class="description_testimonials">
+                      <div class="name">ПАО "Газпром"</div>
+                      <div class="description_name">
+                        Российская транснациональная энергетическая компания
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon_card_div">
+                    <img
+                      src="../../img/Testimonial/IconCard.svg"
+                      alt=""
+                      class="icon_card"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slideT">
+              <div class="testimonial_card">
+                <p class="p_testimonial_card">
+                  Благодаря вашему продукту, мы повысили эффективность работы с
+                  клиентами и партнерами. Отличное решение!
+                </p>
+                <div class="customer">
+                  <div class="details">
+                    <div class="customer_img">
+                      <img
+                        src="../../img/Testimonial/SBER.svg"
+                        alt=""
+                        class="logo_card"
+                      />
+                    </div>
+                    <div class="description_testimonials">
+                      <div class="name">ПАО "СберБанк"</div>
+                      <div class="description_name">
+                        Российский финансовый конгломерат
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon_card_div">
+                    <img
+                      src="../../img/Testimonial/IconCard.svg"
+                      alt=""
+                      class="icon_card"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slideT">
+              <div class="testimonial_card">
+                <p class="p_testimonial_card">
+                  С помощью “Универсального электронного телефонного
+                  справочника” мы смогли значительно ускорить внутренние
+                  процессы. Незаменимый инструмент для нашего бизнеса!
+                </p>
+                <div class="customer">
+                  <div class="details">
+                    <div class="customer_img">
+                      <img
+                        src="../../img/Testimonial/RTC.svg"
+                        alt=""
+                        class="logo_card"
+                      />
+                    </div>
+                    <div class="description_testimonials">
+                      <div class="name">ООО "Ростелеком"</div>
+                      <div class="description_name">
+                        Российский провайдер цифровых услуг и сервисов
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon_card_div">
+                    <img
+                      src="../../img/Testimonial/IconCard.svg"
+                      alt=""
+                      class="icon_card"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slideT">
+              <div class="testimonial_card">
+                <p class="p_testimonial_card">
+                  С помощью “Универсального электронного телефонного
+                  справочника” мы смогли значительно ускорить внутренние
+                  процессы. Незаменимый инструмент для нашего бизнеса!
+                </p>
+                <div class="customer">
+                  <div class="details">
+                    <div class="customer_img">
+                      <img
+                        src="../../img/Testimonial/RTC.svg"
+                        alt=""
+                        class="logo_card"
+                      />
+                    </div>
+                    <div class="description_testimonials">
+                      <div class="name">ООО "Ростелеком"</div>
+                      <div class="description_name">
+                        Российский провайдер цифровых услуг и сервисов
+                      </div>
+                    </div>
+                  </div>
+                  <div class="icon_card_div">
+                    <img
+                      src="../../img/Testimonial/IconCard.svg"
+                      alt=""
+                      class="icon_card"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination22"></div>
+        </div>
+        <div class="button_slider">
+          <button class="button_secondary">Запросить демонстрацию</button>
+          <button class="button_primary">Отправить заявку</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_content1">
+          <div class="footer_columns">
+            <div class="contact_info">
+              <h2 class="h2_footer">Контактная информация</h2>
+            </div>
+            <div class="contact_div">
+              <div class="contact_div1">
+                <div class="address_div">
+                  <h4 class="h4_footer">Юридический адрес:</h4>
+                  <p class="p_footer">
+                    196143, г. Санкт-Петербург, вн.тер.г. муниципальный округ
+                    Звездное, пл. Победы, д. 2, литера А, помещ. 1-Н,
+                    кабинет 422
+                  </p>
+                </div>
+                <div class="tel_div">
+                  <h4 class="h4_footer">Телефон:</h4>
+                  <p class="p_footer">(499) 580-10-00</p>
+                  <p class="p_footer">(812) 455-03-00</p>
+                </div>
+              </div>
+              <div class="contact_div2">
+                <div class="address_corp_div">
+                  <h4 class="h4_footer">Адрес для корреспонденции:</h4>
+                  <p class="p_footer">
+                    117447, г. Москва, ул. Большая Черемушкинская, д. 13, стр. 3
+                  </p>
+                </div>
+                <div class="email_div">
+                  <h4 class="h4_footer">Электронная почта:</h4>
+                  <a href="" class="email">gazprominform@inform.gazprom.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_columns2">
+            <div class="content_footer_subscribe">
+              <h2 class="h2_footer">
+                Подпишитесь на рассылку, чтобы быть в курсе новостей и событий
+              </h2>
+              <input type="email" class="input" placeholder="Ваш E-mail" />
+              <p class="p_consent">
+                Нажимая на кнопку, вы соглашаетесь
+                <a href="">на обработку персональных данных</a>
+              </p>
+            </div>
+            <div class="button_subscribe_div">
+              <button class="button_subscribe">Подписаться</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer_content2">
+          <p class="p_footer_content2">© 2024 ООО «Газпром информ»</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Модалка -->
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="arrow left-arrow">&#10094;</div>
+            <div class="arrow right-arrow">&#10095;</div>
+            <img src="../../img/swiper/1.jpg" class="slide" alt="Image 1" />
+            <img src="../../img/image11.jpg" class="slide" alt="Image 2" />
+            <img src="../../img/swiper/3.jpg" class="slide" alt="Image 3" />
+          </div>
+          <div class="thumbnail-container">
+            <img
+              src="../../img/swiper/1.jpg"
+              class="thumbnail"
+              data-index="0"
+              alt="Thumbnail 1"
+            />
+            <img
+              src="../../img/image11.jpg"
+              class="thumbnail"
+              data-index="1"
+              alt="Thumbnail 2"
+            />
+            <img
+              src="../../img/swiper/3.jpg"
+              class="thumbnail"
+              data-index="2"
+              alt="Thumbnail 3"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModalAuth" class="modalAuth">
+      <div class="container-auth">
+        <div class="modal-auth-content">
+          <div class="auth-head">Вход</div>
+          <div class="div_auth_content">
+            <div class="div_auth_input_windows">
+              <div class="div-input-auth-input-text">Логин</div>
+              <input type="text" class="input-auth" />
+            </div>
+            <div class="div_auth_input_windows">
+              <div class="div-input-auth-input-text">Пароль</div>
+              <input type="password" class="input-auth" />
+            </div>
+          </div>
+          <label for="" class="label">
+            <input type="checkbox" name="agreement" id="agreement" />
+            Выражаю свое согласие на обработку персональных данных в
+            соответствии с полным текстом «Согласия» и условиями Политики
+            обработки персональных данных
+          </label>
+          <div class="div-auth-btn">
+            <button class="auth-button">Войти</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модалка       -->
+
+    <script src="../../package/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        spaceBetween: 4,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      const swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 4,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+
+      const swiperCards = new Swiper(".testimonials", {
+        slidesPerView: 2,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          1000: {
+            slidesPerView: 3,
+          },
+        },
+      });
+      const swiper11 = new Swiper(".mySwiper11", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination11",
+          clickable: true,
+        },
+      });
+    </script>
+    <script src="../productdetails.js"></script>
+  </body>
+</html>
