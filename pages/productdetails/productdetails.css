@@ -108,6 +108,7 @@ ul.breadcrumb {
 ul.breadcrumb li {
   display: inline;
   font-size: 1rem;
+  word-break: break-word;
 }
 
 ul.breadcrumb li + li:before {
@@ -373,10 +374,10 @@ h2 {
     position: absolute;
   }
 
-  .description,
+  /* .description,
   .breadcrumbs {
     margin-left: 100px;
-  }
+  } */
 }
 @media screen and (max-width: 1170px) {
   .footer_content1 {

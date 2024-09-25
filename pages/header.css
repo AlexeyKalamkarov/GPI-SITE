@@ -211,7 +211,7 @@
 }
 ul li {
   cursor: pointer;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 ul div {
   cursor: pointer;

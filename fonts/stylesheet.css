@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'HeliosCondC';
+    src: url('HeliosCondC-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HeliosCond';
+    src: url('HeliosCond.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HeliosCondC';
+    src: url('HeliosCondC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

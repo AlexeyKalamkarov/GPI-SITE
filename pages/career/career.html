@@ -59,7 +59,7 @@
               <div class="search">
                 <div class="dropdown-srch">
                   <img
-                    src="./img/search.svg"
+                    src="../../img/search.svg"
                     alt=""
                     class="icon_search"
                     onclick="openSearch()"
@@ -97,7 +97,7 @@
               <div class="banner-career">
                 <h3 class="h3-career">ПРИСОЕДИНЯЙТЕСЬ <p></p> К НАШЕЙ КОМАНДЕ,<p></p> ГДЕ ВАШ КОД МЕНЯЕТ <p></p>МИР ЭНЕРГЕТИКИ!</h3>
                 <div class="button">
-                  <button class="button-career" type="submit">Отправить резюме</button>
+                  <button class="button-career" type="submit" onclick="openModalAuthCV()">Отправить резюме</button>
                 </div>
               </div>
             </div>
@@ -246,6 +246,63 @@
               </div>
             </div>
           </div>
-          <script src="./productdetails.js"></script>      
+          <div id="myModalCV" class="modalCV">
+            <div class="container-cv">
+              <div class="modal-cv-content">
+                <div class="cv-head">Отправить резюме</div>
+                <div class="div_cv_content">
+                  <div class="div_cv_input_windows">
+                    <div class="div-input-cv-input-text">Фамилия <span style="color: red;">*</span></div>
+                    <input type="text" class="input-cv" />
+                  </div>
+                  <div class="div_cv_input_windows">
+                    <div class="div-input-cv-input-text">Имя <span style="color: red;">*</span></div>
+                    <input type="text" class="input-cv" />
+                  </div>
+                  <div class="div_cv_input_windows">
+                    <div class="div-input-cv-input-text">Отчество <span style="color: red;">*</span></div>
+                    <input type="text" class="input-cv" />
+                  </div>
+                  <div class="div_cv_input_windows">
+                    <div class="div-input-cv-input-text">Город <span style="color: red;">*</span></div>
+                    <input type="text" class="input-cv" />
+                  </div>
+                  <div class="div_cv_input_windows">
+                    <div class="div-input-cv-input-text">Место предыдущей работы <span style="color: red;">*</span></div>
+                    <input type="text" class="input-auth" />
+                  </div>
+                  <div class="div_cv_input_windows">
+                    <div class="div-input-cv-input-text">Занимаемая должность <span style="color: red;">*</span></div>
+                    <input type="text" class="input-cv" />
+                  </div>
+                  <div class="div_cv_input_windows">
+                    <div class="div-input-cv-input-text">Адрес электронной почты <span style="color: red;">*</span></div>
+                    <input type="email" class="input-cv" />
+                  </div>
+                </div>
+                <div class="div-fail">
+                    <div class="fail-text">
+                        <p class="fail-text-p1">Файл резюме <span style="color: red;">*</span></p>
+                        <p class="fail-text-p2">Вы можете добавить резюме, перетащив файл в указанную область или нажав кнопку "Выбрать файл". Поддерживаются типы файлов: doc, docx, rtf, pdf.</p>
+                    </div>
+                    <div class="fail-button-div">
+                        <input type="file" id="fileInput" hidden>
+                        <button type="submit" class="select-file" onclick="document.getElementById('fileInput').click()">Выбрать файл</button>
+                    </div>
+                </div>
+                <label for="" class="label">
+                  <input type="checkbox" name="agreement" id="agreement" />
+                  Выражаю свое согласие на обработку персональных данных в
+                  соответствии с полным текстом «Согласия» и условиями Политики
+                  обработки персональных данных
+                </label>
+                <div class="div-cv-btn">
+                  <button class="cv-button">Отправить</button>
+                </div>
+                <p style="color: #555555; font-size: 12px; margin-top: 14px;"><span style="color: red;">*</span>поля, обязательные для заполнения</p>
+              </div>
+            </div>
+          </div>
+          <script src="../productdetails.js"></script>      
     </body>
 </html>

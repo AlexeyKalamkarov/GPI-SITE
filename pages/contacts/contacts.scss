@@ -1,0 +1,65 @@
+.banner-content-contacts {
+    position: relative;
+    background: url("../../img/contacts/banner-contacts.png");
+    background-size: cover;
+    height: 435px;
+  }
+  .banner-content-contacts::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0),
+      rgba(0, 36, 58, 0.87)
+    );
+    z-index: 1; /* Чтобы градиент был над картинкой, но под текстом */
+}
+  .banner-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 286px;
+    position: absolute;
+    z-index: 2;
+    .h3-contacts {
+        color: #ffffff ;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+  }
+.content-contacts-info {
+    h3 {
+        font-size: 1.5rem;
+        color: #354359; 
+        margin-top: 30px;     
+        margin-bottom: 27px;
+    }
+}
+.content-contacts-info-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 27px;
+    grid-row-gap: 27px;
+    .content-contacts-info-div {
+        .content-contacts-info-p1 {
+            font-size: 1rem;
+            color: #667085;
+            font-weight: 700;
+            // margin-top: 1em;
+        }
+        .content-contacts-info-p2 {
+            font-size: 1rem;
+            color: #667085;
+            font-weight: 200;
+            margin-top: 1em;
+        }
+    }
+}
+.content-contacts-info-img {
+    margin-top: 27px;
+}
