@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../main.css" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <div class="menu_upper">
+            <div class="menu_upper_container">
+              <div class="tel">
+                <p class="phone_number">+7 (499) 580-10-00</p>
+                <p class="phone_number">+7 (812) 455-03-00</p>
+              </div>
+              <div class="group_right">
+                <div class="notifcations">
+                  <img
+                    src="../../img/social/notifications.svg"
+                    alt=""
+                    class="img_notifcations"
+                  />
+                  <p class="p_notifcations">Уведомление</p>
+                </div>
+                <div class="authorization">
+                  <img
+                    src="../../img/social/person.svg"
+                    alt=""
+                    class="img_person"
+                    onclick="openModalAuth()"
+                  />
+                  <p class="p_person" onclick="openModalAuth()">Войти</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header_shadow">
+            <div class="header">
+              <div class="logo_div">
+                <a href="../home/home.html"><img src="../../img/gazprom-inform.svg" alt="" class="logo_img" /></a>
+              </div>
+              <nav class="main_menu">
+                <ul class="ul_menu">
+                  <li><a href="../about/about.html">О компании</a></li>
+                  <li class="dropdown">
+                    <a href="#0" class="dropbtn">Портфолио</a>
+                    <ul class="dropdown-content">
+                      <li><a href="../portfolio/portfolio.html">Продукты</a></li>
+                      <li><a href="../services/services.html">Услуги</a></li>
+                      <li><a href="#0">Проекты и решения</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../news/news.html">Новости</a></li>
+                  <li><a href="../events/events.html">События</a></li>
+                  <li><a href="../career/career.html">Карьера</a></li>
+                  <li><a href="../contacts/contacts.html">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="search">
+                <div class="dropdown-srch">
+                  <img
+                    src="../../img/search.svg"
+                    alt=""
+                    class="icon_search"
+                    onclick="openSearch()"
+                  />
+                  <div class="container">
+                    <div class="dropdown-content-srch">
+                      <p class="dropdown-content-srch-p">Поиск</p>
+                      <input type="text" class="input-search" placeholder="Поиск" />
+                      <p class="result-search">Результаты поиска:</p>
+                      <div class="modal-search-results">
+                        <div class="modal-search-result">
+                          <img src="../../img/navigation/Vector.svg" alt="">
+                          <p>Услуги в сфере информационной безопасности от "Газпром информ"</p>
+                        </div>
+                        <div class="modal-search-result">
+                          <img src="../../img/navigation/Vector.svg" alt="">
+                          <p>Сервисные услуги "Газпром информ" для Группы "Газпром"</p>
+                        </div>
+                        <div class="modal-search-result">
+                          <img src="../../img/navigation/Vector.svg" alt="">
+                          <p>Импортозамещение и инновации в ИТ-услугах "Газпром информ"</p>
+                        </div>
+                        <div class="modal-search-result">
+                          <img src="../../img/navigation/Vector.svg" alt="">
+                          <p>Агентские услуги "Газпром информ" в сфере программного обеспечения</p>
+                        </div>
+                        <div class="modal-search-result">
+                          <img src="../../img/navigation/Vector.svg" alt="">
+                          <p>Комплексные ИТ-услуги и решения для энергетической отрасли: Опыт ООО Газпром информ"</p>
+                        </div>  
+                        <div class="modal-search-result-all">
+                          <a href="../search/search.html">Посмотреть все результаты поиска</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header_shadow2">
+            <div class="header2">
+              <div class="logo_div2">
+                <button class="menu-button" onclick="toggleMenu()">Меню</button>
+              </div>
+              <div id="dropdownMenu" class="dropdown-menu">
+                <ul class="ul">
+                  <li class="li">О компании</li>
+                  <li class="li">Портфолио</li>
+                  <li class="li">Новости</li>
+                  <li class="li">События</li>
+                  <li class="li">Карьера</li>
+                  <li class="li">Контакты</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="banner-content-events">
+            <div class="container">
+              <div class="banner-events">
+                <h3 class="h3-events">СОБЫТИЯ</h3>
+              </div>
+            </div>
+          </div>
+          <div class="breadcrumbs" style="display: block;">
+            <div class="container">
+              <ul class="breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li>События</li>
+              </ul>
+            </div>
+          </div>
+      </header>
+          <section class="content-events">
+            <div class="container">
+                <h1>СОБЫТИЯ</h1>
+                <div class="div-button-years">
+                  <input type="radio" name="radio1" class="btn-year" id="radio2024" checked>
+                  <label for="radio2024">2024</label>
+                  <input type="radio" name="radio1" class="btn-year" id="radio2023">
+                  <label for="radio2023">2023</label>
+                  <input type="radio" name="radio1" class="btn-year" id="radio2022">
+                  <label for="radio2022">2022</label>
+                  <input type="radio" name="radio1" class="btn-year" id="radio2021">
+                  <label for="radio2021">2021</label>
+                  <input type="radio" name="radio1" class="btn-year" id="radio2020">
+                  <label for="radio2020">2020</label>
+                </div>
+                <div class="events-cards">
+                    <div class="event-card1">
+                        <div class="event-card1-event1">
+                            <div class="event-card1-img-div">
+                                <img src="../../img/events/prodacts-item1.png" alt="">
+                            </div>
+                            <div class="event-card1-text-div">
+                                <div class="event-card1-text-div-p1">
+                                    <p>Встреча</p>
+                                    <p>19.08.2024</p>
+                                </div>
+                                <div class="event-card1-text-div-p2">
+                                    <p>Цифровая трансформация в энергетике: стратегия и реализация</p>
+                                </div>
+                                <div class="event-card1-text-div-button">
+                                    <button>Зарегестрироваться<img src="../../img/events/arrow_outward.svg" alt="" class="event-card1-text-div-button-icon"></button>
+                                    
+                                </div>
+                                <div class="event-card1-text-div-p4">
+                                    <p>Начало события в 19:00</p>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="event-card1-event2">
+                            <div class="event-card1-text-div">
+                                <div class="event-card1-text-div-p1">
+                                    <p>Совещание</p>
+                                    <p>19.08.2024</p>
+                                </div>
+                                <div class="event-card1-text-div-p2">
+                                    <p>Информационная безопасность: вызовы и решения</p>
+                                </div>
+                                <div class="event-card1-text-div-button">
+                                    <button>Зарегестрироваться<img src="../../img/events/arrow_outward.svg" alt="" class="event-card1-text-div-button-icon">
+                                    </button>
+                                </div>
+                                <div class="event-card1-text-div-p4">
+                                    <p>Начало события в 13:00</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="event-card2">
+                        <div class="event-card1-event2">
+                            <div class="event-card1-text-div">
+                                <div class="event-card1-text-div-p1">
+                                    <p>Лекция</p>
+                                    <p>25.07.2024</p>
+                                </div>
+                                <div class="event-card1-text-div-p2">
+                                    <p>Тестирование отечественных ИТ-инноваций: практика и выводы</p>
+                                </div>
+                                <div class="event-card1-text-div-button">
+                                    <button>Зарегестрироваться<img src="../../img/events/arrow_outward.svg" alt="" class="event-card1-text-div-button-icon"></button>
+                                </div>
+                                <div class="event-card1-text-div-p4">
+                                    <p>Начало события в 11:00</p>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="event-card1-event1">
+                            <div class="event-card1-img-div">
+                                <img src="../../img/events/prodacts-item2.png" alt="">
+                            </div>
+                            <div class="event-card1-text-div">
+                                <div class="event-card1-text-div-p1">
+                                    <p>Встреча</p>
+                                    <p>08.07.2024</p>
+                                </div>
+                                <div class="event-card1-text-div-p2">
+                                    <p><a class="event-card1-text-div-p2-a" href="../eventsdetails/eventsdetails.html">Импортозамещение в энергетике: технологии и перспективы</a></p>
+                                </div>
+                                <div class="event-card1-text-div-button">
+                                    <button style="display: none;">Зарегестрироваться</button>
+                                </div>
+                                <div class="event-card1-text-div-p4">
+                                    <p>Событие завершено</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="event-card1">
+                        <div class="event-card1-event1">
+                            <div class="event-card1-img-div">
+                                <img src="../../img/events/prodacts-item3.png" alt="">
+                            </div>
+                            <div class="event-card1-text-div">
+                                <div class="event-card1-text-div-p1">
+                                    <p>Вебинар</p>
+                                    <p>08.07.2024</p>
+                                </div>
+                                <div class="event-card1-text-div-p2">
+                                    <p>Данные и аналитика в "Газпром информ": инструменты и методы</p>
+                                </div>
+                                <div class="event-card1-text-div-button">
+                                    <button style="display: none;">Зарегестрироваться</button>
+                                </div>
+                                <div class="event-card1-text-div-p4">
+                                    <p>Событие завершено</p>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="event-card1-event2">
+                            <div class="event-card1-text-div">
+                                <div class="event-card1-text-div-p1">
+                                    <p>Совещание</p>
+                                    <p>08.07.2024</p>
+                                </div>
+                                <div class="event-card1-text-div-p2">
+                                    <p>Оптимизация расходов на ПО: планирование и учет</p>
+                                </div>
+                                <div class="event-card1-text-div-button">
+                                    <button style="display: none;">Зарегестрироваться</button>
+                                </div>
+                                <div class="event-card1-text-div-p4">
+                                    <p>Событие завершено</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="event-card2">
+                        <div class="event-card1-event2">
+                            <div class="event-card1-text-div">
+                                <div class="event-card1-text-div-p1">
+                                    <p>Встреча</p>
+                                    <p>19.08.2024</p>
+                                </div>
+                                <div class="event-card1-text-div-p2">
+                                    <p>Цифровая трансформация в энергетике: стратегия и реализация</p>
+                                </div>
+                                <div class="event-card1-text-div-button">
+                                    <button style="display: none;">Зарегестрироваться</button>
+                                </div>
+                                <div class="event-card1-text-div-p4">
+                                    <p>Начало события в 19:00</p>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="event-card1-event1">
+                            <div class="event-card1-img-div">
+                                <img src="../../img/events/prodacts-item2.png" alt="">
+                            </div>
+                            <div class="event-card1-text-div">
+                                <div class="event-card1-text-div-p1">
+                                    <p>Встреча</p>
+                                    <p>19.08.2024</p>
+                                </div>
+                                <div class="event-card1-text-div-p2">
+                                    <p>Цифровая трансформация в энергетике: стратегия и реализация</p>
+                                </div>
+                                <div class="event-card1-text-div-button">
+                                    <button style="display: none;">Зарегестрироваться</button>
+                                </div>
+                                <div class="event-card1-text-div-p4">
+                                    <p>Начало события в 19:00</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="event-card1">
+                        <div class="event-card1-event1">
+                            <div class="event-card1-img-div">
+                                <img src="../../img/events/prodacts-item1.png" alt="">
+                            </div>
+                            <div class="event-card1-text-div">
+                                <div class="event-card1-text-div-p1">
+                                    <p>Встреча</p>
+                                    <p>19.08.2024</p>
+                                </div>
+                                <div class="event-card1-text-div-p2">
+                                    <p>Цифровая трансформация в энергетике: стратегия и реализация</p>
+                                </div>
+                                <div class="event-card1-text-div-button">
+                                    <button style="display: none;">Зарегестрироваться</button>
+                                </div>
+                                <div class="event-card1-text-div-p4">
+                                    <p>Начало события в 19:00</p>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="event-card1-event2">
+                            <div class="event-card1-text-div">
+                                <div class="event-card1-text-div-p1">
+                                    <p>Встреча</p>
+                                    <p>19.08.2024</p>
+                                </div>
+                                <div class="event-card1-text-div-p2">
+                                    <p>Цифровая трансформация в энергетике: стратегия и реализация</p>
+                                </div>
+                                <div class="event-card1-text-div-button">
+                                    <button style="display: none;">Зарегестрироваться</button>
+                                </div>
+                                <div class="event-card1-text-div-p4">
+                                    <p>Начало события в 19:00</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="event-card2">
+                        <div class="event-card1-event2">
+                            <div class="event-card1-text-div">
+                                <div class="event-card1-text-div-p1">
+                                    <p>Встреча</p>
+                                    <p>19.08.2024</p>
+                                </div>
+                                <div class="event-card1-text-div-p2">
+                                    <p>Цифровая трансформация в энергетике: стратегия и реализация</p>
+                                </div>
+                                <div class="event-card1-text-div-button">
+                                    <button>Зарегестрироваться</button>
+                                </div>
+                                <div class="event-card1-text-div-p4">
+                                    <p>Начало события в 19:00</p>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="event-card1-event1">
+                            <div class="event-card1-img-div">
+                                <img src="../../img/events/prodacts-item2.png" alt="">
+                            </div>
+                            <div class="event-card1-text-div">
+                                <div class="event-card1-text-div-p1">
+                                    <p>Встреча</p>
+                                    <p>19.08.2024</p>
+                                </div>
+                                <div class="event-card1-text-div-p2">
+                                    <p>Цифровая трансформация в энергетике: стратегия и реализация</p>
+                                </div>
+                                <div class="event-card1-text-div-button">
+                                    <button style="display: none;">Зарегестрироваться</button>
+                                </div>
+                                <div class="event-card1-text-div-p4">
+                                    <p>Начало события в 19:00</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+          <footer class="footer">
+            <div class="container">
+              <div class="footer_content1">
+                <div class="footer_columns">
+                  <div class="contact_info">
+                    <h2 class="h2_footer">Контактная информация</h2>
+                  </div>
+                  <div class="contact_div">
+                    <div class="contact_div1">
+                      <div class="address_div">
+                        <h4 class="h4_footer">Юридический адрес:</h4>
+                        <p class="p_footer">
+                          196143, г. Санкт-Петербург, вн.тер.г. муниципальный округ
+                          Звездное, пл. Победы, д. 2, литера А, помещ. 1-Н,
+                          кабинет 422
+                        </p>
+                      </div>
+                      <div class="tel_div">
+                        <h4 class="h4_footer">Телефон:</h4>
+                        <p class="p_footer">(499) 580-10-00</p>
+                        <p class="p_footer">(812) 455-03-00</p>
+                      </div>
+                    </div>
+                    <div class="contact_div2">
+                      <div class="address_corp_div">
+                        <h4 class="h4_footer">Адрес для корреспонденции:</h4>
+                        <p class="p_footer">
+                          117447, г. Москва, ул. Большая Черемушкинская, д. 13, стр. 3
+                        </p>
+                      </div>
+                      <div class="email_div">
+                        <h4 class="h4_footer">Электронная почта:</h4>
+                        <a href="" class="email">gazprominform@inform.gazprom.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer_columns2">
+                  <div class="content_footer_subscribe">
+                    <h2 class="h2_footer">
+                      Подпишитесь на рассылку, чтобы быть в курсе новостей и событий
+                    </h2>
+                    <input type="email" class="input" placeholder="Ваш E-mail" />
+                    <p class="p_consent">
+                      Нажимая на кнопку, вы соглашаетесь
+                      <a href="">на обработку персональных данных</a>
+                    </p>
+                  </div>
+                  <div class="button_subscribe_div">
+                    <button class="button_subscribe">Подписаться</button>
+                  </div>
+                </div>
+              </div>
+              <div class="footer_content2">
+                <p class="p_footer_content2">© 2024 ООО «Газпром информ»</p>
+              </div>
+            </div>
+          </footer>
+          <div id="myModalAuth" class="modalAuth">
+            <div class="container-auth">
+              <div class="modal-auth-content">
+                <div class="auth-head">Вход</div>
+                <div class="div_auth_content">
+                  <div class="div_auth_input_windows">
+                    <div class="div-input-auth-input-text">Логин</div>
+                    <input type="text" class="input-auth" />
+                  </div>
+                  <div class="div_auth_input_windows">
+                    <div class="div-input-auth-input-text">Пароль</div>
+                    <input type="password" class="input-auth" />
+                  </div>
+                </div>
+                <label for="" class="label">
+                  <input type="checkbox" name="agreement" id="agreement" />
+                  Выражаю свое согласие на обработку персональных данных в
+                  соответствии с полным текстом «Согласия» и условиями Политики
+                  обработки персональных данных
+                </label>
+                <div class="div-auth-btn">
+                  <button class="auth-button">Войти</button>
+                </div>
+              </div>
+            </div>
+          </div>
+                    <script src="../productdetails.js"></script>      
+          <script src="../dropdownmenu.js"></script>      
+          <script src="../modalauth.js"></script>      
+          <script src="../modalcv.js"></script>      
+          <script src="../modalevents.js"></script>      
+          <script src="../search.js"></script>      
+      
+    </body>
+</html>

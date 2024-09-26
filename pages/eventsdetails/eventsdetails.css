@@ -1,0 +1,279 @@
+@charset "UTF-8";
+.banner-content-eventsdetails {
+  position: relative;
+  background: url("../../img/events/banner-events.png");
+  background-size: cover;
+  height: 435px;
+}
+
+.banner-content-eventsdetails::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 36, 58, 0.87));
+  z-index: 1; /* Чтобы градиент был над картинкой, но под текстом */
+}
+
+.banner-eventsdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 268px;
+  position: absolute;
+  z-index: 2;
+}
+.banner-eventsdetails .h3-eventsdetails {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.content-eventsdetails {
+  padding-top: 30px;
+}
+.content-eventsdetails h3 {
+  color: black;
+  font-size: 1.5rem;
+  color: #354359;
+}
+.content-eventsdetails .div-button-years {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 27px;
+}
+.content-eventsdetails .div-button-years input[type=radio] {
+  display: none;
+  margin: 10px;
+}
+.content-eventsdetails .div-button-years input[type=radio] + label {
+  padding: 12px 20px;
+  border-radius: 4px;
+  background-color: white;
+  font-family: "HeliosCondC";
+  font-size: 1rem;
+  font-weight: 200;
+  color: #3179bc;
+  border: 1px #3179bc solid;
+  cursor: pointer;
+}
+.content-eventsdetails .div-button-years input[type=radio]:checked + label {
+  background-image: none;
+  background-color: #3179bc;
+  color: #ffffff;
+}
+
+.content-eventsdetails .content-eventsdetails-blocks {
+  margin-top: 27px;
+}
+.content-eventsdetails .content-eventsdetails-blocks .content-eventsdetails-program {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content-eventsdetails .content-eventsdetails-blocks .content-eventsdetails-program .content-eventsdetails-program-item {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+.content-eventsdetails .content-eventsdetails-blocks .content-eventsdetails-button {
+  display: flex;
+  justify-content: center;
+}
+.content-eventsdetails .content-eventsdetails-blocks .content-eventsdetails-button button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  gap: 10px;
+  padding: 16px 20px;
+  border-radius: 4px;
+  background-color: white;
+  font-family: "HeliosCondC";
+  font-size: 1.25rem;
+  font-weight: 200;
+  color: #3179bc;
+  border: 1px #3179bc solid;
+  cursor: pointer;
+}
+.content-eventsdetails p {
+  color: #667085;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.content-eventsdetails span {
+  color: #667085;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.content-eventsdetails .content-eventsdetails-div1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.content-eventsdetails .content-eventsdetails-div1 .content-eventsdetails-div1-div1 .content-eventsdetails-div1-div1-p1 {
+  color: #354359;
+  font-size: 3.375rem;
+  font-weight: 700;
+}
+.content-eventsdetails .content-eventsdetails-div1 .content-eventsdetails-div1-div2 {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+.content-eventsdetails .content-eventsdetails-div1 .content-eventsdetails-div1-div2 .content-eventsdetails-div1-div2-p1 {
+  counter-reset: #354359;
+  font-size: 1.125rem;
+  font-weight: 200;
+}
+.content-eventsdetails .content-eventsdetails-div1 .content-eventsdetails-div1-div2 .content-eventsdetails-div1-div2-p2 {
+  counter-reset: #667085;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.container-event {
+  width: 664px;
+  translate: 0 10%;
+}
+
+.modalEvent {
+  display: none; /* скрыт по умолчанию */
+  justify-content: center;
+  position: fixed;
+  z-index: 3; /* поверх всех элементов */
+  left: 0;
+  top: 0;
+  width: 100vw; /* полная ширина */
+  height: 100vh; /* полная высота */
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: scroll;
+}
+
+.modal-event-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 10px;
+  background-color: #fff;
+  padding: 36px 24px 66px 24px;
+  border-radius: 4px;
+}
+.modal-event-content .div-fail {
+  display: flex;
+  flex-direction: column;
+  margin-top: 14px;
+}
+.modal-event-content .div-fail .fail-text {
+  display: flex;
+  flex-direction: column;
+}
+.modal-event-content .div-fail .fail-text .fail-text-p1 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.875;
+  font-weight: 200;
+}
+.modal-event-content .div-fail .fail-text .fail-text-p2 {
+  color: #555555;
+  font-size: 0.6;
+  font-weight: 200;
+  margin-top: 1em;
+}
+.modal-event-content .div-fail .fail-button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+.modal-event-content .div-fail .fail-button-div .select-file {
+  background: #ffffff;
+  font-family: "HeliosCondC";
+  font-weight: 700;
+  font-size: 1rem;
+  color: #3179bc;
+  width: 172px;
+  height: 40px;
+  border: 1px #3179bc solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-event {
+  width: 462px;
+  height: 36px;
+  text-indent: 10px;
+  border: 1px #667085 solid;
+  border-radius: 4px;
+}
+
+.event-head {
+  font-size: 1.25rem;
+  color: #000;
+  font-weight: 700;
+  font-family: "HeliosCondC";
+}
+
+.div-input-event-input-text {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 200;
+  font-family: "HeliosCondC";
+}
+
+.input-event {
+  width: 568px;
+  height: 36px;
+  border-radius: 4px;
+  border: 1px #dae4ec solid;
+}
+
+.div_event_content {
+  width: 616px;
+  height: auto;
+  background: #eee;
+  margin-top: 14px;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.div_event_input_windows {
+  margin-top: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  gap: 12px;
+  font-size: 0.75rem;
+  font-weight: 100;
+  color: #555555;
+}
+
+.div-event-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+  width: 616px;
+}
+
+.event-button {
+  background: #3179bc;
+  font-family: "HeliosCondC";
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  width: 172px;
+  height: 40px;
+  border: 1px #3179bc solid;
+  border-radius: 4px;
+  cursor: pointer;
+}/*# sourceMappingURL=eventsdetails.css.map */

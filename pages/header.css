@@ -63,7 +63,7 @@
   padding-left: 10px;
 }
 
-/* тестовый */
+/* Меню */
 .ul_menu {
   list-style: none;
   display: flex;
@@ -294,4 +294,33 @@ ul div {
   width: 207px;
   border-bottom: 1px #344054 solid;
   padding: 14px 7px;
+}
+/* Хлебные крошки */
+
+ul.breadcrumb {
+  margin-top: 16px;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 200;
+  color: #98a2b3;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 1rem;
+  word-break: break-word;
+}
+
+ul.breadcrumb li + li:before {
+  color: #98a2b3;
+  content: "/\00a0";
+}
+a {
+  text-decoration: none;
+  color: #98a2b3;
+}
+/* Заголовок */
+h1 {
+  font-size: 1.5rem;
+  color: #354359;
 }

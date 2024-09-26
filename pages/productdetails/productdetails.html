@@ -9,189 +9,191 @@
     <title>Product-details</title>
   </head>
   <body>
-    <div class="menu_upper">
-      <div class="menu_upper_container">
-        <div class="tel">
-          <p class="phone_number">+7 (499) 580-10-00</p>
-          <p class="phone_number">+7 (812) 455-03-00</p>
-        </div>
-        <div class="group_right">
-          <div class="notifcations">
-            <img
-              src="../../img/social/notifications.svg"
-              alt=""
-              class="img_notifcations"
-            />
-            <p class="p_notifcations">Уведомление</p>
+    <header>
+      <div class="menu_upper">
+        <div class="menu_upper_container">
+          <div class="tel">
+            <p class="phone_number">+7 (499) 580-10-00</p>
+            <p class="phone_number">+7 (812) 455-03-00</p>
           </div>
-          <div class="authorization">
-            <img
-              src="../../img/social/person.svg"
-              alt=""
-              class="img_person"
-              onclick="openModalAuth()"
-            />
-            <p class="p_person" onclick="openModalAuth()">Войти</p>
+          <div class="group_right">
+            <div class="notifcations">
+              <img
+                src="../../img/social/notifications.svg"
+                alt=""
+                class="img_notifcations"
+              />
+              <p class="p_notifcations">Уведомление</p>
+            </div>
+            <div class="authorization">
+              <img
+                src="../../img/social/person.svg"
+                alt=""
+                class="img_person"
+                onclick="openModalAuth()"
+              />
+              <p class="p_person" onclick="openModalAuth()">Войти</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <header class="header_shadow">
-      <div class="header">
-        <div class="logo_div">
-          <img src="../../img/gazprom-inform.svg" alt="" class="logo_img" />
+      <div class="header_shadow">
+        <div class="header">
+          <div class="logo_div">
+            <a href="../home/home.html"><img src="../../img/gazprom-inform.svg" alt="" class="logo_img" /></a>
+          </div>
+          <nav class="main_menu">
+            <ul class="ul_menu">
+              <li><a href="../about/about.html">О компании</a></li>
+              <li class="dropdown">
+                <a href="#0" class="dropbtn">Портфолио</a>
+                <ul class="dropdown-content">
+                  <li><a href="../portfolio/portfolio.html">Продукты</a></li>
+                  <li><a href="../services/services.html">Услуги</a></li>
+                  <li><a href="#0">Проекты и решения</a></li>
+                </ul>
+              </li>
+              <li><a href="../news/news.html">Новости</a></li>
+              <li><a href="../events/events.html">События</a></li>
+              <li><a href="../career/career.html">Карьера</a></li>
+              <li><a href="../contacts/contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="search">
+            <div class="dropdown-srch">
+              <img
+                src="../../img/search.svg"
+                alt=""
+                class="icon_search"
+                onclick="openSearch()"
+              />
+              <div class="container">
+                <div class="dropdown-content-srch">
+                  <p class="dropdown-content-srch-p">Поиск</p>
+                  <input type="text" class="input-search" placeholder="Поиск" />
+                  <p class="result-search">Результаты поиска:</p>
+                  <div class="modal-search-results">
+                    <div class="modal-search-result">
+                      <img src="../../img/navigation/Vector.svg" alt="">
+                      <p>Услуги в сфере информационной безопасности от "Газпром информ"</p>
+                    </div>
+                    <div class="modal-search-result">
+                      <img src="../../img/navigation/Vector.svg" alt="">
+                      <p>Сервисные услуги "Газпром информ" для Группы "Газпром"</p>
+                    </div>
+                    <div class="modal-search-result">
+                      <img src="../../img/navigation/Vector.svg" alt="">
+                      <p>Импортозамещение и инновации в ИТ-услугах "Газпром информ"</p>
+                    </div>
+                    <div class="modal-search-result">
+                      <img src="../../img/navigation/Vector.svg" alt="">
+                      <p>Агентские услуги "Газпром информ" в сфере программного обеспечения</p>
+                    </div>
+                    <div class="modal-search-result">
+                      <img src="../../img/navigation/Vector.svg" alt="">
+                      <p>Комплексные ИТ-услуги и решения для энергетической отрасли: Опыт ООО Газпром информ"</p>
+                    </div>  
+                    <div class="modal-search-result-all">
+                      <a href="../search/search.html">Посмотреть все результаты поиска</a>
+                    </div>
+                  </div>
+                </div>
         </div>
-        <nav class="main_menu">
-          <ul class="ul_menu">
-            <li><a href="../about/about.html">О компании</a></li>
-            <li class="dropdown">
-              <a href="#0" class="dropbtn">Портфолио</a>
-              <ul class="dropdown-content">
-                <li><a href="../portfolio/portfolio.html">Продукты</a></li>
-                <li><a href="../services/services.html">Услуги</a></li>
-                <li><a href="#0">Проекты и решения</a></li>
-              </ul>
-            </li>
-            <li><a href="../news/news.html">Новости</a></li>
-            <li><a href="">События</a></li>
-            <li><a href="../career/career.html">Карьера</a></li>
-            <li><a href="../contacts/contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="search">
-          <div class="dropdown-srch">
-            <img
-              src="../../img/search.svg"
-              alt=""
-              class="icon_search"
-              onclick="openSearch()"
-            />
-            <div class="container">
-              <div class="dropdown-content-srch">
-                <p class="dropdown-content-srch-p">Поиск</p>
-                <input type="text" class="input-search" placeholder="Поиск" />
-                <p class="result-search">Результаты поиска:</p>
-                <div class="modal-search-results">
-                  <div class="modal-search-result">
-                    <img src="../../img/navigation/Vector.svg" alt="">
-                    <p>Услуги в сфере информационной безопасности от "Газпром информ"</p>
-                  </div>
-                  <div class="modal-search-result">
-                    <img src="../../img/navigation/Vector.svg" alt="">
-                    <p>Сервисные услуги "Газпром информ" для Группы "Газпром"</p>
-                  </div>
-                  <div class="modal-search-result">
-                    <img src="../../img/navigation/Vector.svg" alt="">
-                    <p>Импортозамещение и инновации в ИТ-услугах "Газпром информ"</p>
-                  </div>
-                  <div class="modal-search-result">
-                    <img src="../../img/navigation/Vector.svg" alt="">
-                    <p>Агентские услуги "Газпром информ" в сфере программного обеспечения</p>
-                  </div>
-                  <div class="modal-search-result">
-                    <img src="../../img/navigation/Vector.svg" alt="">
-                    <p>Комплексные ИТ-услуги и решения для энергетической отрасли: Опыт ООО Газпром информ"</p>
-                  </div>  
-                  <div class="modal-search-result-all">
-                    <a href="../search/search.html">Посмотреть все результаты поиска</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_shadow2">
+        <div class="header2">
+          <div class="logo_div2">
+            <button class="menu-button" onclick="toggleMenu()">Меню</button>
+          </div>
+          <div id="dropdownMenu" class="dropdown-menu">
+            <ul class="ul">
+              <li class="li">О компании</li>
+              <li class="li">Портфолио</li>
+              <li class="li">Новости</li>
+              <li class="li">События</li>
+              <li class="li">Карьера</li>
+              <li class="li">Контакты</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper mySwiper11">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="main">
+              <div class="container">
+                <div class="banner">
+                  <h3>
+                    УНИВЕРСАЛЬНЫЙ
+                    <p></p>
+                    ЭЛЕКТРОННЫЙ
+                    <p></p>
+                    ТЕЛЕФОННЫЙ
+                    <p></p>
+                    СПРАВОЧНИК
+                    <p></p>
+                  </h3>
+                  <div class="button">
+                    <button class="button_secondary" type="submit">
+                      Запросить демонстрацию
+                    </button>
+                    <button class="button_primary" type="submit">
+                      Отправить заявку
+                    </button>
                   </div>
                 </div>
               </div>
-      </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </header>
-    <header class="header_shadow2">
-      <div class="header2">
-        <div class="logo_div2">
-          <button class="menu-button" onclick="toggleMenu()">Меню</button>
-        </div>
-        <div id="dropdownMenu" class="dropdown-menu">
-          <ul class="ul">
-            <li class="li">О компании</li>
-            <li class="li">Портфолио</li>
-            <li class="li">Новости</li>
-            <li class="li">События</li>
-            <li class="li">Карьера</li>
-            <li class="li">Контакты</li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <div class="swiper mySwiper11">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="main">
-            <div class="container">
-              <div class="banner">
-                <h3>
-                  УНИВЕРСАЛЬНЫЙ
-                  <p></p>
-                  ЭЛЕКТРОННЫЙ
-                  <p></p>
-                  ТЕЛЕФОННЫЙ
-                  <p></p>
-                  СПРАВОЧНИК
-                  <p></p>
-                </h3>
-                <div class="button">
-                  <button class="button_secondary" type="submit">
-                    Запросить демонстрацию
-                  </button>
-                  <button class="button_primary" type="submit">
-                    Отправить заявку
-                  </button>
+          <div class="swiper-slide">
+            <div class="main">
+              <div class="container">
+                <div class="banner">
+                  <h3>
+                    УНИВЕРСАЛЬНЫЙ
+                    <p></p>
+                    ЭЛЕКТРОННЫЙ
+                    <p></p>
+                    ТЕЛЕФОННЫЙ
+                    <p></p>
+                    СПРАВОЧНИК
+                    <p></p>
+                  </h3>
+                  <div class="button">
+                    <button class="button_secondary" type="submit">
+                      Запросить демонстрацию
+                    </button>
+                    <button class="button_primary" type="submit">
+                      Отправить заявку
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="swiper-slide">
-          <div class="main">
-            <div class="container">
-              <div class="banner">
-                <h3>
-                  УНИВЕРСАЛЬНЫЙ
-                  <p></p>
-                  ЭЛЕКТРОННЫЙ
-                  <p></p>
-                  ТЕЛЕФОННЫЙ
-                  <p></p>
-                  СПРАВОЧНИК
-                  <p></p>
-                </h3>
-                <div class="button">
-                  <button class="button_secondary" type="submit">
-                    Запросить демонстрацию
-                  </button>
-                  <button class="button_primary" type="submit">
-                    Отправить заявку
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="swiper-pagination swiper-pagination11"></div>
+      </div>
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Продукты</a></li>
+            <li>Универсальный электронный телефонный справочник</li>
+          </ul>
         </div>
       </div>
-      <div class="swiper-pagination swiper-pagination11"></div>
-    </div>
-    <div class="breadcrumbs">
-      <div class="container">
-        <ul class="breadcrumb">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Продукты</a></li>
-          <li>Универсальный электронный телефонный справочник</li>
-        </ul>
-      </div>
-    </div>
+    </header>
     <div class="content">
       <div class="container">
         <div class="description">
           <div class="content_right">
             <div class="about">
-              <h3>УНИВЕРСАЛЬНЫЙ ЭЛЕКТРОННЫЙ ТЕЛЕФОННЫЙ СПРАВОЧНИК</h3>
+              <h1>УНИВЕРСАЛЬНЫЙ ЭЛЕКТРОННЫЙ ТЕЛЕФОННЫЙ СПРАВОЧНИК</h1>
               <p>
                 В поисках оптимального решения для управления контактами в вашей
                 крупной компании?
@@ -681,6 +683,12 @@
         },
       });
     </script>
-    <script src="../productdetails.js"></script>
+              <script src="../productdetails.js"></script>      
+          <script src="../dropdownmenu.js"></script>      
+          <script src="../modalauth.js"></script>      
+          <script src="../modalcv.js"></script>      
+          <script src="../modalevents.js"></script>      
+          <script src="../search.js"></script>      
+
   </body>
 </html>

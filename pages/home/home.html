@@ -119,13 +119,63 @@
               </div>
             </div>
           </div>
-          <div class="banner-content-news">
-            <div class="container">
-              <div class="banner-news">
-                <h3 class="h3-news">НОВОСТИ</h3>
+          <div class="swiper mySwiper11">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="main">
+                  <div class="container">
+                    <div class="banner">
+                      <h3>
+                        УНИВЕРСАЛЬНЫЙ
+                        <p></p>
+                        ЭЛЕКТРОННЫЙ
+                        <p></p>
+                        ТЕЛЕФОННЫЙ
+                        <p></p>
+                        СПРАВОЧНИК
+                        <p></p>
+                      </h3>
+                      <div class="button">
+                        <button class="button_secondary" type="submit">
+                          Запросить демонстрацию
+                        </button>
+                        <button class="button_primary" type="submit">
+                          Отправить заявку
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="main">
+                  <div class="container">
+                    <div class="banner">
+                      <h3>
+                        УНИВЕРСАЛЬНЫЙ
+                        <p></p>
+                        ЭЛЕКТРОННЫЙ
+                        <p></p>
+                        ТЕЛЕФОННЫЙ
+                        <p></p>
+                        СПРАВОЧНИК
+                        <p></p>
+                      </h3>
+                      <div class="button">
+                        <button class="button_secondary" type="submit">
+                          Запросить демонстрацию
+                        </button>
+                        <button class="button_primary" type="submit">
+                          Отправить заявку
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="swiper-pagination swiper-pagination11"></div>
+          </div>      
           <div class="breadcrumbs" style="display: block;">
             <div class="container">
               <ul class="breadcrumb">
@@ -149,6 +199,12 @@
                   <label for="radio2021">2021</label>
                   <input type="radio" name="radio1" class="btn-year" id="radio2020">
                   <label for="radio2020">2020</label>
+
+                    <!-- <button type="button" class="button-year" style="background-color: #3179bc; color: #fff;">2023</button>
+                    <button type="button" class="button-year">2022</button>
+                    <button type="button" class="button-year">2021</button>
+                    <button type="button" class="button-year">2024</button>
+                    <button type="button" class="button-year">2020</button> -->
                 </div>
                 <div class="news-cards">
                     <div class="news-card">
@@ -354,7 +410,16 @@
             </div>
           </div>
           <script src="../../package/swiper-bundle.min.js"></script>
-                    <script src="../productdetails.js"></script>      
+          <script>
+                const swiper11 = new Swiper(".mySwiper11", {
+                    spaceBetween: 30,
+                    pagination: {
+                    el: ".swiper-pagination11",
+                    clickable: true,
+                    },
+                });
+          </script>
+                      <script src="../productdetails.js"></script>      
           <script src="../dropdownmenu.js"></script>      
           <script src="../modalauth.js"></script>      
           <script src="../modalcv.js"></script>      

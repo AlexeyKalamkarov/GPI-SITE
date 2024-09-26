@@ -7,6 +7,7 @@
         <link href="../main.css" rel="stylesheet">
     </head>
     <body>
+      <header>
         <div class="menu_upper">
             <div class="menu_upper_container">
               <div class="tel">
@@ -34,10 +35,10 @@
               </div>
             </div>
           </div>
-          <header class="header_shadow">
+          <div class="header_shadow">
             <div class="header">
               <div class="logo_div">
-                <img src="../../img/gazprom-inform.svg" alt="" class="logo_img" />
+                <a href="../home/home.html"><img src="../../img/gazprom-inform.svg" alt="" class="logo_img" /></a>
               </div>
               <nav class="main_menu">
                 <ul class="ul_menu">
@@ -51,7 +52,7 @@
                     </ul>
                   </li>
                   <li><a href="../news/news.html">Новости</a></li>
-                  <li><a href="">События</a></li>
+                  <li><a href="../events/events.html">События</a></li>
                   <li><a href="../services/services.html">Карьера</a></li>
                   <li><a href="">Контакты</a></li>
                 </ul>
@@ -98,8 +99,8 @@
                 </div>
               </div>
             </div>
-          </header>
-          <header class="header_shadow2">
+          </div>
+          <div class="header_shadow2">
             <div class="header2">
               <div class="logo_div2">
                 <button class="menu-button" onclick="toggleMenu()">Меню</button>
@@ -115,7 +116,7 @@
                 </ul>
               </div>
             </div>
-          </header>
+          </div>
           <div class="banner-content-contacts">
             <div class="container">
               <div class="banner-contacts">
@@ -131,9 +132,10 @@
               </ul>
             </div>
           </div>
+      </header>
           <section class="content-contacts-info">
             <div class="container">
-                <h3>КОНТАКТЫ</h3>
+                <h1>КОНТАКТЫ</h1>
                 <div class="content-contacts-info-text">
                     <div class="content-contacts-info-div">
                         <p class="content-contacts-info-p1">Юридический адрес:</p>
@@ -268,6 +270,12 @@
               </div>
             </div>
           </div>
-          <script src="../productdetails.js"></script>      
+                    <script src="../productdetails.js"></script>      
+          <script src="../dropdownmenu.js"></script>      
+          <script src="../modalauth.js"></script>      
+          <script src="../modalcv.js"></script>      
+          <script src="../modalevents.js"></script>      
+          <script src="../search.js"></script>      
+      
     </body>
 </html>
