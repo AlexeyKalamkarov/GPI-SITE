@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .banner-content {
   position: relative;
-  background: url("../../img/services/banner-container.png");
   background-size: cover;
   height: 435px;
 }
@@ -16,14 +15,6 @@
   background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 36, 58, 0.87));
   z-index: 1; /* Чтобы градиент был над картинкой, но под текстом */
 }
-
-h3 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: white;
-  text-align: left;
-}
-
 .button {
   display: flex;
   flex-direction: row;
@@ -39,11 +30,6 @@ h3 {
   padding-bottom: 72px;
   position: absolute;
   z-index: 2;
-}
-.banner-services .h3-services {
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: 700;
 }
 
 .button-services {
@@ -69,37 +55,26 @@ h3 {
   flex-direction: column;
   gap: 36px;
 }
-.service-goals-text h3 {
-  color: black;
-  font-size: 1.5rem;
-  color: #354359;
-}
-.service-goals-text .about-service p {
-  font-size: 1rem;
-  font-weight: 100;
-  color: #667085;
-}
-.service-goals-text .about-service h3 {
+.about-service h3 {
   margin-bottom: 20px;
 }
-.service-goals-text .about-service .p-about-services {
+.p-about-services {
   margin-top: 1em;
 }
-.service-goals-text .about-service .goals {
+.about-service .goals {
   margin-top: 47;
 }
-.service-goals-text .about-service .goals .goal {
+.about-service .goals .goal {
   margin-top: 27px;
 }
-.service-goals-text .about-service .goals .goal p {
+.about-service .goals .goal p {
   margin-top: 12px;
 }
-
 .sevice-card-div {
   display: flex;
   justify-content: center;
 }
-.sevice-card-div .sevice-card-content {
+.sevice-card-content {
   max-width: 599px;
   height: auto;
   padding: 24px;
@@ -107,24 +82,15 @@ h3 {
   border-radius: 8px;
   margin-top: 27px;
 }
-.sevice-card-div .sevice-card-content .sevice-card-content1 h5 {
-  font-size: 1.25rem;
-  color: #039855;
-  font-weight: 700;
-}
-.sevice-card-div .sevice-card-content .sevice-card-content1 p {
-  font-size: 1rem;
-  color: #667085;
-  font-weight: 200;
-  letter-spacing: -1%;
+.sevice-card-content1 p {
   margin-top: 1em;
 }
-.sevice-card-div .sevice-card-content .sevice-card-content2 {
+.sevice-card-content2 {
   display: flex;
   justify-content: center;
   margin-top: 11px;
 }
-.sevice-card-div .sevice-card-content .sevice-card-content2 .sevice-card-button {
+.sevice-card-button {
   width: 202px;
   height: 50px;
   border-radius: 4px;

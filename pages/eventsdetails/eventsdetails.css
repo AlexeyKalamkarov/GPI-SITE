@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .banner-content-eventsdetails {
   position: relative;
-  background: url("../../img/events/banner-events.png");
   background-size: cover;
   height: 435px;
 }
@@ -25,19 +24,8 @@
   position: absolute;
   z-index: 2;
 }
-.banner-eventsdetails .h3-eventsdetails {
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: 700;
-}
-
 .content-eventsdetails {
   padding-top: 30px;
-}
-.content-eventsdetails h3 {
-  color: black;
-  font-size: 1.5rem;
-  color: #354359;
 }
 .content-eventsdetails .div-button-years {
   display: flex;
@@ -69,21 +57,21 @@
 .content-eventsdetails .content-eventsdetails-blocks {
   margin-top: 27px;
 }
-.content-eventsdetails .content-eventsdetails-blocks .content-eventsdetails-program {
+.content-eventsdetails-program {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.content-eventsdetails .content-eventsdetails-blocks .content-eventsdetails-program .content-eventsdetails-program-item {
+.content-eventsdetails-program-item {
   display: flex;
   flex-direction: row;
   gap: 6px;
 }
-.content-eventsdetails .content-eventsdetails-blocks .content-eventsdetails-button {
+.content-eventsdetails-button {
   display: flex;
   justify-content: center;
 }
-.content-eventsdetails .content-eventsdetails-blocks .content-eventsdetails-button button {
+.content-eventsdetails-button button {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -100,40 +88,31 @@
   border: 1px #3179bc solid;
   cursor: pointer;
 }
-.content-eventsdetails p {
-  color: #667085;
-  font-size: 1rem;
-  font-weight: 200;
-}
+
 .content-eventsdetails span {
   color: #667085;
   font-size: 1rem;
   font-weight: 700;
 }
-.content-eventsdetails .content-eventsdetails-div1 {
+.content-eventsdetails-div1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   gap: 8px;
 }
-.content-eventsdetails .content-eventsdetails-div1 .content-eventsdetails-div1-div1 .content-eventsdetails-div1-div1-p1 {
+.content-eventsdetails-div1-div1-p1 {
   color: #354359;
   font-size: 3.375rem;
   font-weight: 700;
 }
-.content-eventsdetails .content-eventsdetails-div1 .content-eventsdetails-div1-div2 {
+.content-eventsdetails-div1-div2 {
   display: flex;
   flex-direction: column;
   gap: 13px;
 }
-.content-eventsdetails .content-eventsdetails-div1 .content-eventsdetails-div1-div2 .content-eventsdetails-div1-div2-p1 {
+.content-eventsdetails-div1-div2-p1 {
   counter-reset: #354359;
   font-size: 1.125rem;
-  font-weight: 200;
-}
-.content-eventsdetails .content-eventsdetails-div1 .content-eventsdetails-div1-div2 .content-eventsdetails-div1-div2-p2 {
-  counter-reset: #667085;
-  font-size: 1rem;
   font-weight: 200;
 }
 
@@ -166,33 +145,33 @@
   padding: 36px 24px 66px 24px;
   border-radius: 4px;
 }
-.modal-event-content .div-fail {
+.div-fail {
   display: flex;
   flex-direction: column;
   margin-top: 14px;
 }
-.modal-event-content .div-fail .fail-text {
+.div-fail .fail-text {
   display: flex;
   flex-direction: column;
 }
-.modal-event-content .div-fail .fail-text .fail-text-p1 {
+.fail-text-p1 {
   color: rgba(0, 0, 0, 0.6);
   font-size: 0.875;
   font-weight: 200;
 }
-.modal-event-content .div-fail .fail-text .fail-text-p2 {
+.fail-text-p2 {
   color: #555555;
   font-size: 0.6;
   font-weight: 200;
   margin-top: 1em;
 }
-.modal-event-content .div-fail .fail-button-div {
+.fail-button-div {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 8px;
 }
-.modal-event-content .div-fail .fail-button-div .select-file {
+.select-file {
   background: #ffffff;
   font-family: "HeliosCondC";
   font-weight: 700;

@@ -43,6 +43,7 @@
 .p_notifcations,
 .p_person {
   cursor: pointer;
+  color: #fff;
 }
 /* Блок header_shadow */
 
@@ -177,11 +178,14 @@
   gap: 8px;
   align-items: center;
 }
-.modal-search-result p {
+.phone_number {
+  color: #fff;
+}
+/* .modal-search-result p {
   font-size: 1rem;
   font-weight: 200;
   color: #344054;
-}
+} */
 .modal-search-result-all {
   display: flex;
   justify-content: flex-end;
@@ -320,7 +324,10 @@ a {
   color: #98a2b3;
 }
 /* Заголовок */
-h1 {
-  font-size: 1.5rem;
-  color: #354359;
+
+.h4 {
+  position: absolute;
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 700;
 }

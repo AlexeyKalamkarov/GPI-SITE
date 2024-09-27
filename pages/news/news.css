@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .banner-content-news {
   position: relative;
-  background: url("../../img/news/banner-news.png");
   background-size: cover;
   height: 435px;
 }
@@ -25,20 +24,11 @@
   position: absolute;
   z-index: 2;
 }
-.banner-news .h3-news {
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: 700;
-}
 
 .content-news {
   padding-top: 30px;
 }
-.content-news h3 {
-  color: black;
-  font-size: 1.5rem;
-  color: #354359;
-}
+
 .content-news .div-button-years {
   display: flex;
   flex-direction: row;
@@ -65,12 +55,10 @@
   background-color: #3179bc;
   color: #ffffff;
 }
-.content-news .news-cards {
+.news-cards {
   margin-top: 35px;
-  overflow: scroll;
-  max-height: 580px;
 }
-.content-news .news-card {
+.news-card {
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -78,24 +66,24 @@
   margin-bottom: 16px;
   cursor: pointer;
 }
-.content-news .news-card .news-card-info {
+.news-card-info {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 20px;
 }
-.content-news .news-card .news-card-info .p-news-date {
+.p-news-date {
   text-align: right;
   color: #667085;
   font-size: 1.125rem;
   font-weight: 200;
 }
-.content-news .news-card .news-card-info .news-card-info-textB {
+.news-card-info-textB {
   color: #344054;
   font-size: 1.125rem;
   font-weight: 700;
   margin-top: 10px;
 }
-.content-news .news-card .news-card-info .news-card-info-textR {
+.news-card-info-textR {
   color: #344054;
   font-size: 1.125rem;
   font-weight: 200;

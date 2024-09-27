@@ -31,14 +31,16 @@
     flex-direction: row;
   }
   .h2_footer {
-    font-size: 1.125rem;
-    font-weight: 700;
     color: #fff;
     margin-bottom: 20px;
   }
+
   .h4_footer {
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+  .p_footer {
+    color: #fff;
   }
   .footer .container {
     padding: 30px;
@@ -86,6 +88,10 @@
   .p_consent a {
     color: #fff;
     text-decoration: underline;
+    font-size: 0.75rem;
+  }
+  .p_consent {
+    color: #fff;
   }
   .footer_content2 {
     display: flex;
@@ -93,10 +99,12 @@
     font-family: "HeliosCond";
     font-size: 1.125rem;
     font-weight: 200;
-    color: #fff;
+    color: #fff !important;
     padding-top: 10px;
     margin-top: 36px;
     border-top: 1px #464646 solid;
     white-space: nowrap;
   }
-  
+  .p_footer_content2 {
+    color: #fff;
+  } 

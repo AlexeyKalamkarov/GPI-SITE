@@ -14,3 +14,36 @@
 @import url(../pages/events/events.css);
 @import url(../pages/eventsdetails/eventsdetails.css);
 @import url(../pages/home/home.css);
+
+h1 {
+    font-size: 1.5rem;
+    color: #354359;
+    margin-bottom: 27px;
+  }
+h2 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #354359;
+  }
+h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+}
+p {
+    font-size: 1rem;
+    color: #667085;
+    font-weight: 200;
+}
+a {
+    font-size: 1rem;
+    font-weight: 200;
+}
+.banner-img {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    height: 435px;
+  }
+  
