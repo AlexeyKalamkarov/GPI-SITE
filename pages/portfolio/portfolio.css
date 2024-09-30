@@ -38,13 +38,13 @@ body {
   object-fit: cover;
   position: absolute;
 }
-.prodacts-item1 .prodact-item-content h4 a {
-  position: absolute;
-  font-family: "HeliosCondC";
-  color: #ffffff;
-  font-size: 1.45rem;
-  font-weight: 700;
-  min-width: 270px;
+.prodact-item-content h4 a {
+  position: absolute!important;
+  font-family: "HeliosCondC"!important;
+  color: #ffffff!important;
+  font-size: 1.45rem!important;
+  font-weight: 700!important;
+  min-width: 270px!important;
 }
 .prodacts-item-text-a {
   color: #ffffff;
