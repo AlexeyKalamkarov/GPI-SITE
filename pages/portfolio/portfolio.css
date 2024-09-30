@@ -45,7 +45,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6); /* Градиент */
-  z-index: 1; /* Чтобы градиент был над картинкой, но под текстом */
+  z-index: 2; /* Чтобы градиент был над картинкой, но под текстом */
   cursor: pointer;
 }
 .prodact-item-content-img {

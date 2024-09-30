@@ -179,6 +179,10 @@
   gap: 10px;
   max-width: 153px;
 }
+.small-card-p2 {
+  font-size: 0.875rem;
+  color: #98A2B3;
+}
 .about-map-img-div {
   display: flex;
   justify-content: center;
