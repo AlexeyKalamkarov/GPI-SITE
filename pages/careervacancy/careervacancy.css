@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.banner-cv {
+  padding-top: 49px!important;
+}
 .button-career {
   padding: 18px 30px;
   border-radius: 4px;
