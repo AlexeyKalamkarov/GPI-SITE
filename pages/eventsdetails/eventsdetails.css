@@ -1,43 +1,15 @@
 @charset "UTF-8";
-.banner-content-eventsdetails {
-  position: relative;
-  background-size: cover;
-  height: 435px;
-}
-
-.banner-content-eventsdetails::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 36, 58, 0.87));
-  z-index: 1; /* Чтобы градиент был над картинкой, но под текстом */
-}
-
-.banner-eventsdetails {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 268px;
-  position: absolute;
-  z-index: 2;
-}
-.content-eventsdetails {
-  padding-top: 30px;
-}
-.content-eventsdetails .div-button-years {
+.div-button-years {
   display: flex;
   flex-direction: row;
   gap: 16px;
   margin-top: 27px;
 }
-.content-eventsdetails .div-button-years input[type=radio] {
+.div-button-years input[type=radio] {
   display: none;
   margin: 10px;
 }
-.content-eventsdetails .div-button-years input[type=radio] + label {
+.div-button-years input[type=radio] + label {
   padding: 12px 20px;
   border-radius: 4px;
   background-color: white;
@@ -48,13 +20,13 @@
   border: 1px #3179bc solid;
   cursor: pointer;
 }
-.content-eventsdetails .div-button-years input[type=radio]:checked + label {
+.div-button-years input[type=radio]:checked + label {
   background-image: none;
   background-color: #3179bc;
   color: #ffffff;
 }
 
-.content-eventsdetails .content-eventsdetails-blocks {
+.content-eventsdetails-blocks {
   margin-top: 27px;
 }
 .content-eventsdetails-program {
@@ -89,7 +61,7 @@
   cursor: pointer;
 }
 
-.content-eventsdetails span {
+.content span {
   color: #667085;
   font-size: 1rem;
   font-weight: 700;

@@ -24,11 +24,6 @@
   position: absolute;
   z-index: 2;
 }
-
-.content-contacts-info {
-  margin-top: 30px;
-}
-
 .content-contacts-info-text {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

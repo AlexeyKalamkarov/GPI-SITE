@@ -1,37 +1,11 @@
 @charset "UTF-8";
-.banner-content {
-  position: relative;
-  background-size: cover;
-  height: 435px;
-}
 
-.banner-content::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 36, 58, 0.87));
-  z-index: 1; /* Чтобы градиент был над картинкой, но под текстом */
-}
 .button {
   display: flex;
   flex-direction: row;
   gap: 10px;
   margin-top: 24px;
 }
-
-.banner-services {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 104px;
-  padding-bottom: 72px;
-  position: absolute;
-  z-index: 2;
-}
-
 .button-services {
   width: 202px;
   height: 50px;
@@ -44,12 +18,6 @@
   border: 1px #3179bc solid;
   cursor: pointer;
 }
-
-.content-services-text {
-  margin-top: 30px;
-  margin-bottom: 100px;
-}
-
 .service-goals-text {
   display: flex;
   flex-direction: column;
@@ -61,13 +29,13 @@
 .p-about-services {
   margin-top: 1em;
 }
-.about-service .goals {
+.goals {
   margin-top: 47;
 }
-.about-service .goals .goal {
+.goal {
   margin-top: 27px;
 }
-.about-service .goals .goal p {
+.goal p {
   margin-top: 12px;
 }
 .sevice-card-div {

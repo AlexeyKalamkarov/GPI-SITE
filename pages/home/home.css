@@ -24,11 +24,6 @@
   position: absolute;
   z-index: 2;
 }
-
-.content-news {
-  padding-top: 30px;
-}
-
 .content-news .div-button-years {
   display: flex;
   flex-direction: row;
