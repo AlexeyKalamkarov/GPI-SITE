@@ -127,7 +127,9 @@ body {
   height: 19px;
 }
 /* Свайпер */
-
+.banner-swiper {
+  padding-top: 65px !important;
+}
 .content_left {
   display: flex;
   justify-content: center;

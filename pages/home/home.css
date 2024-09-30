@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.banner-swiper {
+  padding-top: 65px !important;
+}
 .banner-content-news {
   position: relative;
   background-size: cover;
