@@ -135,7 +135,7 @@ body {
   justify-content: center;
   margin-top: 55px;
 }
-.swiper-slide .swiper-slideT {
+.swiper-slideT {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -147,18 +147,18 @@ body {
   background-size: cover;
   background-position: center;
 }
-.mySwiper .swiper-slide-thumb-active {
+.swiper-slide-thumb-active {
   border: 2px #5f7791 solid;
   border-radius: 4px;
 }
-.mySwiper .swiper-slide {
+.swiper-slide {
   width: 70px;
   height: 70px;
   opacity: 0.4;
   margin-top: 20px;
 }
 
-.mySwiper .swiper-slide-thumb-active {
+.swiper-slide-thumb-active {
   opacity: 1;
 }
 .swiper-slide img {
