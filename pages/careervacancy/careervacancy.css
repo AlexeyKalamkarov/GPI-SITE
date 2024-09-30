@@ -25,7 +25,6 @@
   flex-direction: column;
   gap: 36px;
 }
-
 .about-career h3 {
   margin-bottom: 20px;
 }
@@ -55,7 +54,7 @@
 .vacancy-details-item li {
   color: #667085;
   font-size: 1rem;
-  font-size: 200;
+  font-weight: 200;
 }
 .vacancy-details-item div {
   margin-top: 16px;
@@ -77,42 +76,12 @@
   cursor: pointer;
   white-space: nowrap;
 }
-
-.container-cv {
-  width: 664px;
-  translate: 0 calc(50% - 400px);
-}
-
-.modalCV {
-  display: none; /* скрыт по умолчанию */
-  justify-content: center;
-  position: fixed;
-  z-index: 3; /* поверх всех элементов */
-  left: 0;
-  top: 0;
-  width: 100vw; /* полная ширина */
-  height: 100vh; /* полная высота */
-  background-color: rgba(0, 0, 0, 0.4);
-  overflow: scroll;
-}
-
-.modal-cv-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: -moz-fit-content;
-  height: fit-content;
-  gap: 10px;
-  background-color: #fff;
-  padding: 36px 24px 66px 24px;
-  border-radius: 4px;
-}
 .div-fail {
   display: flex;
   flex-direction: column;
   margin-top: 14px;
 }
-.div-fail .fail-text {
+.fail-text {
   display: flex;
   flex-direction: column;
 }
@@ -123,7 +92,7 @@
 }
 .fail-text-p2 {
   color: #555555;
-  font-size: 0.6;
+  font-size: 0.75rem;
   font-weight: 200;
   margin-top: 1em;
 }
@@ -145,49 +114,6 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
-.input-cv {
-  width: 462px;
-  height: 36px;
-  text-indent: 10px;
-  border: 1px #667085 solid;
-  border-radius: 4px;
-}
-
-.cv-head {
-  font-size: 1.25rem;
-  color: #000;
-  font-weight: 700;
-  font-family: "HeliosCondC";
-}
-
-.div-input-cv-input-text {
-  font-size: 0.875rem;
-  color: rgba(0, 0, 0, 0.6);
-  font-weight: 200;
-  font-family: "HeliosCondC";
-}
-
-.input-cv {
-  width: 568px;
-  height: 36px;
-  border-radius: 4px;
-  border: 1px #dae4ec solid;
-}
-
-.div_cv_content {
-  width: 616px;
-  height: auto;
-  background: #eee;
-  margin-top: 14px;
-  padding: 24px;
-  border-radius: 8px;
-}
-
-.div_cv_input_windows {
-  margin-top: 20px;
-}
-
 label {
   display: flex;
   flex-direction: row;
@@ -197,24 +123,6 @@ label {
   font-size: 0.75rem;
   font-weight: 100;
   color: #555555;
-}
-
-.div-cv-btn {
-  display: flex;
-  justify-content: flex-end;
   margin-top: 14px;
-  width: 616px;
 }
-
-.cv-button {
-  background: #3179bc;
-  font-family: "HeliosCondC";
-  font-weight: 700;
-  font-size: 1rem;
-  color: #fff;
-  width: 172px;
-  height: 40px;
-  border: 1px #3179bc solid;
-  border-radius: 4px;
-  cursor: pointer;
-}/*# sourceMappingURL=careervacancy.css.map */
+/*# sourceMappingURL=careervacancy.css.map */

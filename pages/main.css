@@ -14,6 +14,7 @@
 @import url(../pages/events/events.css);
 @import url(../pages/eventsdetails/eventsdetails.css);
 @import url(../pages/home/home.css);
+@import url(../pages/modal.css);
 
 h1 {
     font-size: 1.5rem;
@@ -49,7 +50,7 @@ a {
 .content {
     margin-top: 30px;
   }
-  .banner {
+.banner {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -57,13 +58,13 @@ a {
     position: absolute;
     z-index: 2;
   }
-  .banner-content {
+.banner-content {
     position: relative;
     background-size: cover;
     height: 435px;
   }
   
-  .banner-content::before {
+.banner-content::before {
     content: "";
     position: absolute;
     top: 0;
@@ -73,3 +74,7 @@ a {
     background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 36, 58, 0.87));
     z-index: 1; /* Чтобы градиент был над картинкой, но под текстом */
   }
+
+
+
+  

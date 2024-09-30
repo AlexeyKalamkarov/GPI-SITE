@@ -1,0 +1,76 @@
+/* модальное окно */
+.modalCV, .modalEvent {
+    display: none; /* скрыт по умолчанию */
+    justify-content: center;
+    position: fixed;
+    z-index: 3; /* поверх всех элементов */
+    left: 0;
+    top: 0;
+    width: 100vw; /* полная ширина */
+    height: 100vh; /* полная высота */
+    background-color: rgba(0, 0, 0, 0.4);
+    overflow: scroll;
+}
+.modal-cv-content, .modal-event-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: -moz-fit-content;
+    height: fit-content;
+    gap: 10px;
+    background-color: #fff;
+    padding: 36px 24px 66px 24px;
+    border-radius: 4px;
+}
+.input-modal {
+    width: 568px;
+    height: 36px;
+    text-indent: 10px;
+    border: 1px #DAE4EC solid;
+    border-radius: 4px;
+}
+.modal-head {
+    font-size: 1.25rem;
+    color: #000;
+    font-weight: 700;
+    font-family: "HeliosCondC";
+}
+.div-input-modal-input-text {
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 200;
+    font-family: "HeliosCondC";
+}
+.div_modal_content {
+    width: 616px;
+    height: auto;
+    background: #eee;
+    margin-top: 14px;
+    padding: 24px;
+    border-radius: 8px;
+}
+.container-modal {
+    width: 664px;
+    translate: 0 10%;
+}
+.div_modal_input_windows {
+    margin-top: 20px;
+}
+.modal-button {
+    background: #3179bc;
+    font-family: "HeliosCondC";
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    width: 172px;
+    height: 40px;
+    border: 1px #3179bc solid;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.div-modal-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 14px;
+    width: 616px;
+}
