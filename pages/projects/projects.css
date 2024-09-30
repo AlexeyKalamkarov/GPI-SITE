@@ -1,0 +1,31 @@
+.parent-prodacts-item-project-div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.parent-prodacts-item-project1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.parent-prodacts-item-project2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.prodacts-item1-project {
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    width: 100% !important;
+    height: auto;
+}
+.prodacts-item2-project {
+    grid-area: 1 / 2 / 2 / 3;
+    position: relative;
+    width: 100% !important;
+}
+

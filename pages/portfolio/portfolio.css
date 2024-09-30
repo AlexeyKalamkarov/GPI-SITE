@@ -52,14 +52,15 @@
   width: 100%;
   object-fit: cover;
   position: absolute;
+  height: 370px;
 }
 .prodact-item-content h4 a {
-  position: absolute!important;
-  font-family: "HeliosCondC"!important;
-  color: #ffffff!important;
-  font-size: 1.45rem!important;
-  font-weight: 700!important;
-  min-width: 270px!important;
+  position: absolute;
+  font-family: "HeliosCondC";
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 700;
+  min-width: 270px;
 }
 .prodacts-item-text-a {
   color: #ffffff;
