@@ -1,0 +1,29 @@
+.project-solution {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 12px;
+}
+.project-solution b {
+    font-size: 1rem;
+    color: #101828;
+}
+.sevice-card-content1-div {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.goal span {
+    color: #667085;
+    font-size: 1rem;
+    margin-left: 8px;
+}
+.products-related, .goal-solution {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}

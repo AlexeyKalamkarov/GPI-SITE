@@ -37,7 +37,7 @@
 .goal {
   margin-top: 27px;
 }
-.goal p {
+.goal p, .goal h2 {
   margin-top: 12px;
 }
 .sevice-card-div {
