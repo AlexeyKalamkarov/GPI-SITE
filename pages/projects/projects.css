@@ -35,6 +35,18 @@
     cursor: pointer;
   
 }
+.project1:hover:before,
+.project2:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Градиент */
+    z-index: 2; /* Чтобы градиент был над картинкой, но под текстом */
+    cursor: pointer;  
+}
 .project-img {
     width: 100%;
     overflow: hidden;
