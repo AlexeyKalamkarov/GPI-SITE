@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../main.css" rel="stylesheet">
+    </head>
+    <body>
+      <header>
+        <div class="menu_upper">
+            <div class="menu_upper_container">
+              <div class="tel">
+                <p href="" class="phone_number">+7 (499) 580-10-00</p>
+                <p class="phone_number">+7 (812) 455-03-00</p>
+              </div>
+              <div class="group_right">
+                <div class="notifcations">
+                  <img
+                    src="../../img/social/notifications.svg"
+                    alt=""
+                    class="img_notifcations"
+                  />
+                  <p class="p_notifcations">Уведомление</p>
+                </div>
+                <div class="authorization">
+                  <img
+                    src="../../img/social/person.svg"
+                    alt=""
+                    class="img_person"
+                    onclick="openModalAuth()"
+                  />
+                  <p class="p_person" onclick="openModalAuth()">Войти</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header_shadow">
+            <div class="header">
+              <div class="logo_div">
+                <a href="../home/home.html"><img src="../../img/gazprom-inform.svg" alt="" class="logo_img" /></a>
+              </div>
+              <nav class="main_menu">
+                <ul class="ul_menu">
+                  <li><a href="../about/about.html">О компании</a></li>
+                  <li class="dropdown">
+                    <a href="#0" class="dropbtn">Портфолио</a>
+                    <ul class="dropdown-content">
+                      <li><a href="../portfolio/portfolio.html">Продукты</a></li>
+                      <li><a href="../services/services.html">Услуги</a></li>
+                      <li><a href="../../pages/projects/projects.html">Проекты и решения</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../news/news.html">Новости</a></li>
+                  <li><a href="../events/events.html">События</a></li>
+                  <li><a href="../career/career.html">Карьера</a></li>
+                  <li><a href="../contacts/contacts.html">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="search">
+                <div class="dropdown-srch">
+                  <img
+                    src="../../img/search.svg"
+                    alt=""
+                    class="icon_search"
+                    onclick="openSearch()"
+                  />
+                  <div class="container">
+                    <div class="dropdown-content-srch">
+                      <p class="dropdown-content-srch-p">Поиск</p>
+                      <input type="text" class="input-search" placeholder="Поиск" />
+                      <p class="result-search">Результаты поиска:</p>
+                      <div class="modal-search-results">
+                        <div class="modal-search-result">
+                          <img src="../../img/navigation/Vector.svg" alt="">
+                          <p>Услуги в сфере информационной безопасности от "Газпром информ"</p>
+                        </div>
+                        <div class="modal-search-result">
+                          <img src="../../img/navigation/Vector.svg" alt="">
+                          <p>Сервисные услуги "Газпром информ" для Группы "Газпром"</p>
+                        </div>
+                        <div class="modal-search-result">
+                          <img src="../../img/navigation/Vector.svg" alt="">
+                          <p>Импортозамещение и инновации в ИТ-услугах "Газпром информ"</p>
+                        </div>
+                        <div class="modal-search-result">
+                          <img src="../../img/navigation/Vector.svg" alt="">
+                          <p>Агентские услуги "Газпром информ" в сфере программного обеспечения</p>
+                        </div>
+                        <div class="modal-search-result">
+                          <img src="../../img/navigation/Vector.svg" alt="">
+                          <p>Комплексные ИТ-услуги и решения для энергетической отрасли: Опыт ООО Газпром информ"</p>
+                        </div>  
+                        <div class="modal-search-result-all">
+                          <a href="../search/search.html">Посмотреть все результаты поиска</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header_shadow2">
+            <div class="header2">
+              <div class="logo_div2">
+                <!-- <img src="./img/lines_menu_burger_icon_123889.svg" alt="" class="menu_svg" onclick="toggleMenu()"> -->
+                <button class="menu-button" onclick="toggleMenu()">Меню</button>
+              </div>
+              <div id="dropdownMenu" class="dropdown-menu">
+                <ul class="ul">
+                  <li class="li">О компании</li>
+                  <li class="li">Портфолио</li>
+                  <li class="li">Новости</li>
+                  <li class="li">События</li>
+                  <li class="li">Карьера</li>
+                  <li class="li">Контакты</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="banner-content">
+            <img src="../../img/projectdetails/banner-projectdetails.png" alt="" class="banner-img">
+            <div class="container">
+              <div class="banner banner-serv">
+                <h3 class="h3-services">СОЗДАНИЕ <p></p> КОРПОРАТИВНОГО ПОРТАЛА <p></p> ДЛЯ ПАО "СБЕРБАНК"</h3>
+                <div class="button">
+                  <button class="button-services" type="submit">Связаться с нами</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="breadcrumbs">
+            <div class="container">
+              <ul class="breadcrumb">
+                <li><a href="../../pages/home/home.html">Главная</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="../../pages/projects/projects.html">Проекты</a></li>
+                <li>Создание корпоративного портала для ПАО “Сбербанк”</li>
+              </ul>
+            </div>
+          </div>
+      </header>
+          <section class="content">
+            <div class="container">
+                <div class="service-goals-text">
+                    <div class="about-service">
+                      <h1>СОЗДАНИЕ КОРПОРАТИВНОГО ПОРТАЛА ДЛЯ ПАО "СБЕРБАНК"</h1>
+                      <p>
+                        Без корпоративного портала Сбербанк ежедневно сталкивается с серьезными проблемами, которые ограничивают их операционную эффективность и стратегическое развитие. Фрагментация данных по различным системам создаёт препятствия для своевременного доступа к информации, что замедляет процесс принятия решений и ухудшает реакцию на динамично меняющуюся рыночную ситуацию. Неэффективное взаимодействие между подразделениями из-за отсутствия единой коммуникационной платформы приводит к увеличению времени на выполнение задач и снижению общей продуктивности. Также, сложности в управлении ресурсами и проблемы с обеспечением безопасности данных из-за использования множества неинтегрированных систем увеличивают риски и затраты.
+                      </p>
+                      <p style="margin-top: 1em;">Понимая необходимость решения этих проблем, Сбербанк проявил интерес к приобретению нашего Корпоративного портала. Портал предлагает централизованное решение для управления данными, что позволяет улучшить доступ к информации и оптимизировать рабочие процессы. Единая коммуникационная платформа упрощает взаимодействие между сотрудниками и подразделениями, способствуя более быстрому и эффективному выполнению задач. Интеграция с существующими системами банка и повышенные меры безопасности минимизируют риски утечек информации и повышают уровень защиты данных. Таким образом, корпоративный портал становится ключевым инструментом в стратегии цифровой трансформации Сбербанка, направленной на укрепление его позиций на рынке и обеспечение устойчивого развития.</p>
+                      <p class="p-about-services">
+                        Мы предлагаем:
+                    </p>
+                        <div class="goals">
+                            <div class="goal" style="display: flex; flex-direction: column;">
+                                <h2>Поставленные задачи</h2>
+                                <div class="goal-solution">
+                                    <img src="../../img/projectdetails/fiber_manual_record.svg" alt="">
+                                    <span>Создание масштабируемого корпоративного портала для централизации данных и удобного доступа к информации.</span>    
+                                </div>
+                                <div class="goal-solution">
+                                    <img src="../../img/projectdetails/fiber_manual_record.svg" alt="">
+                                    <span>Интеграция портала с корпоративными системами ПАО "Сбербанк".</span>    
+                                </div>
+                                <div class="goal-solution">
+                                    <img src="../../img/projectdetails/fiber_manual_record.svg" alt="">
+                                    <span>Обеспечение высокого уровня безопасности и стабильности работы портала.</span>    
+                                </div>
+                                <!-- <li><span>Создание масштабируемого корпоративного портала для централизации данных и удобного доступа к информации.</span></li>
+                                <li><span>Интеграция портала с корпоративными системами ПАО "Сбербанк".</span></li>
+                                <li><span>Обеспечение высокого уровня безопасности и стабильности работы портала.</span></li> -->
+                            </div>
+                            <div class="goal">
+                                <h2>Решение</h2>
+                                <div class="project-solution">
+                                    <img src="../../img/projectdetails/point1.svg" alt="">
+                                    <div>
+                                        <b>Анализ и планирование</b>
+                                        <p>Мы провели всесторонний анализ потребностей "Сбербанка" и разработали комплексный план, который учитывал специфику и требования банковской системы.</p>
+                                        <p style="margin-top: 1em;">Помимо основного заявленного функционала, мы обнаружили необходимость интеграции с другой нашей разработкой -  <a href="../../pages/productdetails/productdetails.html">Универсальным электронным телефонным справочником.</a> Это одним из ключевых моментов проекта, поскольку справочник содержал важные контактные данные, которые должны были быть легко доступны через портал. Интеграция позволила  бы сотрудникам Сбербанка быстро находить нужные контакты, улучшая коммуникацию и сотрудничество внутри компании. </p>
+                                    </div>
+                                </div>
+                                <div class="project-solution">
+                                    <img src="../../img/projectdetails/point2.svg" alt="">
+                                    <div>
+                                        <b>Разработка и интеграция</b>
+                                        <p>Создали интуитивно понятный интерфейс, обеспечивающий легкий доступ к информации и ресурсам, и интегрировали портал с ключевыми корпоративными системами банка.</p>
+                                    </div>
+                                </div>
+                                <div class="project-solution">
+                                    <img src="../../img/projectdetails/point2.svg" alt="">
+                                    <div>
+                                        <b>Тестирование и запуск</b>
+                                        <p>Провели тестирование для проверки совместимости и безопасности. Преодолели трудности совместимости с устаревшими системами, адаптируя портал к ним.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goal">
+                                <h2>Связаные продукты</h2>
+                                <div class="products-related">
+                                    <img src="../../img/projectdetails/fiber_manual_record.svg" alt="">
+                                    <li style="list-style-type: none;"><a style="color: #3394CE; text-decoration: underline;" href="">Универсальный электронный телефонный справочник</a></li>
+                                </div>
+                                <div class="products-related">
+                                    <img src="../../img/projectdetails/fiber_manual_record.svg" alt="">
+                                    <li style="list-style-type: none;"><a style="color: #3394CE; text-decoration: underline;" href="">Корпоративный портал</a></li>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>  
+                <div class="sevice-card-div">
+                    <div class="sevice-card-content">
+                        <div class="sevice-card-content1">
+                            <h2 style="color: #039855 !important;">Результат</h2>
+                            <div class="sevice-card-content1-div">
+                                <p>В результате "Сбербанк" получил надежный корпоративный портал, который повысил эффективность работы сотрудников и укрепил позиции банка на рынке благодаря улучшенной организации рабочих процессов и защите данных.</p>
+                                <img src="../../img/projectdetails/trophy.svg" alt="">                                
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+          </section>
+          <footer class="footer">
+            <div class="container">
+              <div class="footer_content1">
+                <div class="footer_columns">
+                  <div class="contact_info">
+                    <h2 class="h2_footer">Контактная информация</h2>
+                  </div>
+                  <div class="contact_div">
+                    <div class="contact_div1">
+                      <div class="address_div">
+                        <h4 class="h4_footer">Юридический адрес:</h4>
+                        <p class="p_footer">
+                          196143, г. Санкт-Петербург, вн.тер.г. муниципальный округ
+                          Звездное, пл. Победы, д. 2, литера А, помещ. 1-Н,
+                          кабинет 422
+                        </p>
+                      </div>
+                      <div class="tel_div">
+                        <h4 class="h4_footer">Телефон:</h4>
+                        <p class="p_footer">(499) 580-10-00</p>
+                        <p class="p_footer">(812) 455-03-00</p>
+                      </div>
+                    </div>
+                    <div class="contact_div2">
+                      <div class="address_corp_div">
+                        <h4 class="h4_footer">Адрес для корреспонденции:</h4>
+                        <p class="p_footer">
+                          117447, г. Москва, ул. Большая Черемушкинская, д. 13, стр. 3
+                        </p>
+                      </div>
+                      <div class="email_div">
+                        <h4 class="h4_footer">Электронная почта:</h4>
+                        <a href="" class="email">gazprominform@inform.gazprom.ru</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer_columns2">
+                  <div class="content_footer_subscribe">
+                    <h2 class="h2_footer">
+                      Подпишитесь на рассылку, чтобы быть в курсе новостей и событий
+                    </h2>
+                    <input type="email" class="input" placeholder="Ваш E-mail" />
+                    <p class="p_consent">
+                      Нажимая на кнопку, вы соглашаетесь
+                      <a href="">на обработку персональных данных</a>
+                    </p>
+                  </div>
+                  <div class="button_subscribe_div">
+                    <button class="button_subscribe">Подписаться</button>
+                  </div>
+                </div>
+              </div>
+              <div class="footer_content2">
+                <p class="p_footer_content2">© 2024 ООО «Газпром информ»</p>
+              </div>
+            </div>
+          </footer>
+          <div id="myModalAuth" class="modalAuth">
+            <div class="container-auth">
+              <div class="modal-auth-content">
+                <div class="auth-head">Вход</div>
+                <div class="div_auth_content">
+                  <div class="div_auth_input_windows">
+                    <div class="div-input-auth-input-text">Логин</div>
+                    <input type="text" class="input-auth" />
+                  </div>
+                  <div class="div_auth_input_windows">
+                    <div class="div-input-auth-input-text">Пароль</div>
+                    <input type="password" class="input-auth" />
+                  </div>
+                </div>
+                <label for="" class="label">
+                  <input type="checkbox" name="agreement" id="agreement" />
+                  Выражаю свое согласие на обработку персональных данных в
+                  соответствии с полным текстом «Согласия» и условиями Политики
+                  обработки персональных данных
+                </label>
+                <div class="div-auth-btn">
+                  <button class="auth-button">Войти</button>
+                </div>
+              </div>
+            </div>
+          </div>
+                    <script src="../productdetails.js"></script>      
+          <script src="../dropdownmenu.js"></script>      
+          <script src="../modalauth.js"></script>      
+          <script src="../modalcv.js"></script>      
+          <script src="../modalevents.js"></script>      
+          <script src="../search.js"></script>      
+      
+    </body>
+</html>
