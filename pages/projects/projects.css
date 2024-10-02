@@ -46,7 +46,7 @@
     left: 40px;
     z-index: 2;
 }
-.project-text span {
+.project-text a {
     color: #fff;
     font-size: 1.45rem;
     font-weight: 700;
